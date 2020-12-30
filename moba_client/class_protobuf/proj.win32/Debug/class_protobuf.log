@@ -1,0 +1,12 @@
+﻿  game.pb.cc
+e:\cprojects\moba_game_server\moba_client\class_protobuf\3rd\protobuf\src\google\protobuf\wire_format_lite.h(863): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+e:\cprojects\moba_game_server\moba_client\class_protobuf\3rd\protobuf\src\google\protobuf\wire_format_lite.h(874): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+  main.cpp
+e:\cprojects\moba_game_server\moba_client\class_protobuf\3rd\protobuf\src\google\protobuf\wire_format_lite.h(863): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+e:\cprojects\moba_game_server\moba_client\class_protobuf\3rd\protobuf\src\google\protobuf\wire_format_lite.h(874): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+e:\cprojects\moba_game_server\moba_client\class_protobuf\src\main.cpp(22): warning C4244: “参数”: 从“DWORD”转换到“WORD”，可能丢失数据
+e:\cprojects\moba_game_server\moba_client\class_protobuf\src\main.cpp(36): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1831): note: 参见“inet_addr”的声明
+  tp_protocol.cc
+  正在生成代码...
+  class_protobuf.vcxproj -> E:\CProjects\moba_game_server\moba_client\class_protobuf\proj.win32\Debug\class_protobuf.exe

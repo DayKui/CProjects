@@ -1,0 +1,24 @@
+syntax="proto2";
+
+//命名空间
+package test;
+
+enum Direction{
+	START=0;
+	EAST=1;
+	SOUTH=2;
+	WEST=3;
+	NORTH=4;
+}
+//注释 protoc 这个工具就能把我们的消息编译成对应的代码;
+message my_person{//消息开始
+	//字段规则 字段类型 字段名字 字段标识号
+	required string name=1;
+	required int32 age=20;
+	optional int32 sex=2;
+	repeated int32 array_value=4;//定义了一个动态数组,这个里面可以添加int32元素
+}//消息结束
+
+message address_book{
+	repeated my_person persons=1;
+}
