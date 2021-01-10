@@ -24,7 +24,18 @@ on_query_cb(const char* err, std::vector<std::vector<std::string>>* result) {
 		printf("err");
 		return;
 	}
-
+	if (result!=NULL)
+	{
+		int count = result->size();
+		for (int i = 0; i < count; i++)
+		{
+			std::vector < std::string > vec = result->at(i);
+			for (vector<std::string>::const_iterator iter = vec.cbegin(); iter != vec.cend(); iter++)
+			{
+				cout << (*iter) << endl;
+			}
+		}
+	}
 	printf("success");
 }
 
@@ -37,8 +48,8 @@ on_open_cb(const char* err, void* context) {
 	}
 	printf("connect success");
 
-	// mysql_wrapper::query(context, "update class_test set name = \"blake haha\" where id = 8", on_query_cb);
-	//mysql_wrapper::query(context, "select * from class_test", on_query_cb);
+	//mysql_wrapper::query(context, "update class_test set name = \"blake haha\" where id = 8", on_query_cb);
+	mysql_wrapper::query(context, "select * from class_test", on_query_cb);
 
 	// mysql_wrapper::close(context);
 }
@@ -48,7 +59,7 @@ test_db() {
 	mysql_wrapper::connect("127.0.0.1", 3306, "class_sql", "root", "123456", on_open_cb);
 }
 
-int main(int*argc,char**argv)
+int main(int*argc, char**argv)
 {
 	test_db();
 	proto_man::init(PROTO_BUF);

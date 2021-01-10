@@ -4,36 +4,38 @@
 
 #include "uv.h"
 
-#ifdef  WIN32
+#ifdef WIN32
 #include <winsock.h>
-#pragma comment(lib,"ws2_32.lib")
-#pragma comment(lib,"libmysql.lib")
-#endif //  WIN32
+#pragma comment(lib, "ws2_32.lib")
+#pragma comment(lib, "libmysql.lib")
+#endif
 
 #include "mysql.h"
+
 #include "mysql_wrapper.h"
 
-#define  my_malloc malloc 
-#define  my_free free
+#define my_malloc malloc
+#define my_free free
 
-struct connect_req
-{
+struct connect_req {
 	char* ip;
 	int port;
 
 	char* db_name;
+
 	char* uname;
 	char* upwd;
+
 	void(*open_cb)(const char* err, void* context);
 
 	char* err;
 	void* context;
 };
 
-struct  mysql_context
-{
-	void* pConn;//mysql
+struct mysql_context {
+	void* pConn; // mysql
 	uv_mutex_t lock;
+
 	int is_closed;
 };
 
@@ -82,8 +84,8 @@ static void on_connect_complete(uv_work_t* req, int status) {
 }
 
 void mysql_wrapper::connect(char* ip, int port,
-							char* db_name, char* uname, char* pwd,
-							void(*open_cb)(const char* err, void* context)) {
+	char* db_name, char* uname, char* pwd,
+	void(*open_cb)(const char* err, void* context)) {
 	uv_work_t* w = (uv_work_t*)my_malloc(sizeof(uv_work_t));
 	memset(w, 0, sizeof(uv_work_t));
 
@@ -109,7 +111,8 @@ static void close_work(uv_work_t* req) {
 	uv_mutex_unlock(&r->lock);
 }
 
-static void on_close_complete(uv_work_t* req, int status) {
+static void
+on_close_complete(uv_work_t* req, int status) {
 	struct mysql_context* r = (struct mysql_context*)(req->data);
 	my_free(r);
 	my_free(req);

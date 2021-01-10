@@ -1,16 +1,2 @@
-﻿  mysql_wrapper.cc
-e:\cprojects\moba_game_server\moba_server\database\mysql_wrapper.cc(56): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
-e:\cprojects\moba_game_server\moba_server\database\mysql_wrapper.cc(93): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
-e:\cprojects\moba_game_server\moba_server\database\mysql_wrapper.cc(95): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
-e:\cprojects\moba_game_server\moba_server\database\mysql_wrapper.cc(96): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
-e:\cprojects\moba_game_server\moba_server\database\mysql_wrapper.cc(97): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
-e:\cprojects\moba_game_server\moba_server\database\mysql_wrapper.cc(153): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
-e:\cprojects\moba_game_server\moba_server\database\mysql_wrapper.cc(219): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
-  moba_gameserver.vcxproj -> E:\CProjects\moba_game_server\moba_server\build\proj.win32\Debug\moba_gameserver.exe
+﻿  main.cc
+  moba_gameserver.vcxproj -> E:\GitProject\moba_server\build\proj.win32\Debug\moba_gameserver.exe
