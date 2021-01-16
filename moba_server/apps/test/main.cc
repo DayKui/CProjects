@@ -13,13 +13,15 @@ using namespace std;
 #include "../../utils/time_list.h"
 #include "../../utils/timestamp.h"
 #include "../../database/mysql_wrapper.h"
+#include "../../database/redis_wrapper.h"
+#include "../../database/redis_wrapper.h"
+#include "../../lua_wrapper/lua_wrapper.h"
 
 static void on_logger_timer(void* udata) {
 	log_debug("on_logger_timer");
 }
 
-static void
-on_query_cb(const char* err, std::vector<std::vector<std::string>>* result) {
+static void on_query_cb(const char* err, std::vector<std::vector<std::string>>* result) {
 	if (err) {
 		printf("err");
 		return;
@@ -34,22 +36,22 @@ on_query_cb(const char* err, std::vector<std::vector<std::string>>* result) {
 			{
 				cout << (*iter) << endl;
 			}
+			cout << "---------------------" << endl;
 		}
 	}
 	printf("success");
 }
 
 
-static void
-on_open_cb(const char* err, void* context) {
+static void on_open_cb(const char* err, void* context) {
 	if (err != NULL) {
 		printf("%s\n", err);
 		return;
 	}
-	printf("connect success");
+	printf("connect success\n");
 
-	//mysql_wrapper::query(context, "update class_test set name = \"blake haha\" where id = 8", on_query_cb);
-	mysql_wrapper::query(context, "select * from class_test", on_query_cb);
+	mysql_wrapper::query(context, "update class_test set name = \"blake haha\" where id = 7", on_query_cb);
+	//mysql_wrapper::query(context, "select * from class_test", on_query_cb);
 
 	// mysql_wrapper::close(context);
 }
@@ -59,9 +61,34 @@ test_db() {
 	mysql_wrapper::connect("127.0.0.1", 3306, "class_sql", "root", "123456", on_open_cb);
 }
 
+static void on_redis_query(const char* err, redisReply* result) {
+	if (err) {
+		printf("%s\n", err);
+		return;
+	}
+
+	printf("success\n");
+}
+
+static void on_redis_open(const char* err, void* context) {
+	if (err != NULL) {
+		printf("%s\n", err);
+		return;
+	}
+	printf("connect success\n");
+
+	redis_wrapper::query(context, "select 1", on_redis_query);
+	// redis_wrapper::close_redis(context);
+}
+
+static void test_redis() {
+	redis_wrapper::connect("127.0.0.1", 6379, on_redis_open);
+}
+
 int main(int*argc, char**argv)
 {
-	test_db();
+	//test_db();
+	test_redis();
 	proto_man::init(PROTO_BUF);
 	init_pf_cmd_map();
 
@@ -82,7 +109,14 @@ int main(int*argc, char**argv)
 	netbus::instance()->start_tcp_server(6080);
 	netbus::instance()->start_upd_server(8002);
 	netbus::instance()->start_ws_server(8001);
+	//netbus::instance()->run();
+
+	//
+	lua_wrapper::init();
+	lua_wrapper::exe_lua_file("./main.lua");
+	// 
 	netbus::instance()->run();
+	lua_wrapper::exit();
 	return 0;
 }
 
