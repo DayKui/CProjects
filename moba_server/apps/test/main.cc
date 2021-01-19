@@ -43,21 +43,20 @@ static void on_query_cb(const char* err, std::vector<std::vector<std::string>>* 
 }
 
 
-static void on_open_cb(const char* err, void* context) {
+static void on_open_cb(const char* err, void* context, void* udata) {
 	if (err != NULL) {
 		printf("%s\n", err);
 		return;
 	}
-	printf("connect success\n");
+	printf("connect success");
 
-	mysql_wrapper::query(context, "update class_test set name = \"blake haha\" where id = 7", on_query_cb);
-	//mysql_wrapper::query(context, "select * from class_test", on_query_cb);
+	// mysql_wrapper::query(context, "update class_test set name = \"blake haha\" where id = 8", on_query_cb);
+	mysql_wrapper::query(context, "select * from class_test", on_query_cb);
 
 	// mysql_wrapper::close(context);
 }
 
-static void
-test_db() {
+static void test_db() {
 	mysql_wrapper::connect("127.0.0.1", 3306, "class_sql", "root", "123456", on_open_cb);
 }
 

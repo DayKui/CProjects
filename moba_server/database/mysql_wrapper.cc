@@ -26,10 +26,12 @@ struct connect_req {
 	char* uname;
 	char* upwd;
 
-	void(*open_cb)(const char* err, void* context);
+	void(*open_cb)(const char* err, void* context, void* upata);
 
 	char* err;
 	void* context;
+
+	void* udata;
 };
 
 struct mysql_context {
@@ -61,7 +63,7 @@ static void connect_work(uv_work_t* req) {
 
 static void on_connect_complete(uv_work_t* req, int status) {
 	struct connect_req* r = (struct connect_req*)req->data;
-	r->open_cb(r->err, r->context);
+	r->open_cb(r->err, r->context, r->udata);
 
 	if (r->ip) {
 		free(r->ip);
@@ -85,7 +87,7 @@ static void on_connect_complete(uv_work_t* req, int status) {
 
 void mysql_wrapper::connect(char* ip, int port,
 	char* db_name, char* uname, char* pwd,
-	void(*open_cb)(const char* err, void* context)) {
+	void(*open_cb)(const char* err, void* context, void* udata),void* udata) {
 	uv_work_t* w = (uv_work_t*)my_malloc(sizeof(uv_work_t));
 	memset(w, 0, sizeof(uv_work_t));
 
@@ -98,7 +100,7 @@ void mysql_wrapper::connect(char* ip, int port,
 	r->uname = strdup(uname);
 	r->upwd = strdup(pwd);
 	r->open_cb = open_cb;
-
+	r->udata = udata;
 	w->data = (void*)r;
 	uv_queue_work(uv_default_loop(), w, connect_work, on_connect_complete);
 }
@@ -111,8 +113,7 @@ static void close_work(uv_work_t* req) {
 	uv_mutex_unlock(&r->lock);
 }
 
-static void
-on_close_complete(uv_work_t* req, int status) {
+static void on_close_complete(uv_work_t* req, int status) {
 	struct mysql_context* r = (struct mysql_context*)(req->data);
 	my_free(r);
 	my_free(req);
