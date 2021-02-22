@@ -6,27 +6,27 @@
 
 #include "tolua_fix.h"
 #include "lua_wrapper.h"
-#include "../database/mysql_export_to_lua.h"
+#include "mysql_export_to_lua.h"
+#include "redis_export_to_lua.h"
+#include "service_export_to_lua.h"
+#include "session_export_to_lua.h"
+#include "scheduler_export_to_lua.h"
 
 lua_State* g_lua_State = NULL;
 
-static void
-print_error(const char* file_name, int line_num, const char* msg) {
+static void print_error(const char* file_name, int line_num, const char* msg) {
 	logger::log(file_name, line_num, ERROR, msg);
 }
 
-static void
-print_warning(const char* file_name, int line_num, const char* msg) {
+static void print_warning(const char* file_name, int line_num, const char* msg) {
 	logger::log(file_name, line_num, WARNING, msg);
 }
 
-static void
-print_debug(const char* file_name, int line_num, const char* msg) {
+static void print_debug(const char* file_name, int line_num, const char* msg) {
 	logger::log(file_name, line_num, DEBUG, msg);
 }
 
-static void
-do_log_message(void(*log)(const char* file_name, int line_num, const char* msg), const char* msg) {
+static void do_log_message(void(*log)(const char* file_name, int line_num, const char* msg), const char* msg) {
 	lua_Debug info;
 	int depth = 0;
 	while (lua_getstack(g_lua_State, depth, &info)) {
@@ -47,8 +47,7 @@ do_log_message(void(*log)(const char* file_name, int line_num, const char* msg),
 	}
 }
 
-static int 
-lua_log_debug(lua_State *L) {
+static int lua_log_debug(lua_State *L) {
 	const char* msg = luaL_checkstring(L, -1);
 	if (msg) { // file_name, line_num
 		do_log_message(print_debug, msg);
@@ -56,8 +55,7 @@ lua_log_debug(lua_State *L) {
 	return 0;
 }
 
-static int 
-lua_log_warning(lua_State *L) {
+static int lua_log_warning(lua_State *L) {
 	const char* msg = luaL_checkstring(L, -1);
 	if (msg) { // file_name, line_num
 		do_log_message(print_warning, msg);
@@ -65,8 +63,7 @@ lua_log_warning(lua_State *L) {
 	return 0;
 }
 
-static int
-lua_log_error(lua_State *L) {
+static int lua_log_error(lua_State *L) {
 	const char* msg = luaL_checkstring(L, -1);
 	if (msg) { // file_name, line_num
 		do_log_message(print_error, msg);
@@ -74,8 +71,7 @@ lua_log_error(lua_State *L) {
 	return 0;
 }
 
-static int
-lua_panic(lua_State *L) {
+static int lua_panic(lua_State *L) {
 	const char* msg = luaL_checkstring(L, -1);
 	if (msg) { // file_name, line_num
 		do_log_message(print_error, msg);
@@ -83,38 +79,70 @@ lua_panic(lua_State *L) {
 	return 0;
 }
 
-lua_State* 
-lua_wrapper::lua_state() {
+lua_State* lua_wrapper::lua_state() {
 	return g_lua_State;
 }
 
-void 
-lua_wrapper::init() {
+static int lua_logger_init(lua_State* tolua_S) {
+	const char* path = lua_tostring(tolua_S, 1);
+	if (path == NULL) {
+		goto lua_failed;
+	}
+
+	const char* prefix = lua_tostring(tolua_S, 2);
+	if (prefix == NULL) {
+		goto lua_failed;
+	}
+
+	bool std_out = lua_toboolean(tolua_S, 3);
+	logger::init(path, prefix, std_out);
+
+lua_failed:
+	return 0;
+}
+
+static int register_logger_export(lua_State* tolua_S) {
+	lua_wrapper::reg_func2lua("print", lua_log_debug);
+
+	lua_getglobal(tolua_S, "_G");
+	if (lua_istable(tolua_S, -1)) {
+		tolua_open(tolua_S);
+		tolua_module(tolua_S, "logger", 0);
+		tolua_beginmodule(tolua_S, "logger");
+
+		tolua_function(tolua_S, "debug", lua_log_debug);
+		tolua_function(tolua_S, "warning", lua_log_warning);
+		tolua_function(tolua_S, "error", lua_log_error);
+		tolua_function(tolua_S, "init", lua_logger_init);
+		tolua_endmodule(tolua_S);
+	}
+	lua_pop(tolua_S, 1);
+	return 0;
+}
+
+void lua_wrapper::init() {
 	g_lua_State = luaL_newstate();
 	lua_atpanic(g_lua_State, lua_panic); // default abort;
 
 	luaL_openlibs(g_lua_State);
 	toluafix_open(g_lua_State);
-	
-	register_mysql_export(g_lua_State);
 
-	// export log
-	lua_wrapper::reg_func2lua("log_error", lua_log_error);
-	lua_wrapper::reg_func2lua("log_debug", lua_log_debug);
-	lua_wrapper::reg_func2lua("log_warning", lua_log_warning);
-	// end 
+	register_logger_export(g_lua_State);
+	register_mysql_export(g_lua_State);
+	register_redis_export(g_lua_State);
+	register_service_export(g_lua_State);
+	register_session_export(g_lua_State);
+	register_scheduler_export(g_lua_State);
 }
 
-void
-lua_wrapper::exit() {
+void lua_wrapper::exit() {
 	if (g_lua_State != NULL) {
 		lua_close(g_lua_State);
 		g_lua_State = NULL;
 	}
 }
 
-bool
-lua_wrapper::exe_lua_file(const char* lua_file) {
+bool lua_wrapper::exe_lua_file(const char* lua_file) {
 
 	if (luaL_dofile(g_lua_State, lua_file)) {
 		lua_log_error(g_lua_State);
@@ -123,14 +151,12 @@ lua_wrapper::exe_lua_file(const char* lua_file) {
 	return true;
 }
 
-void 
-lua_wrapper::reg_func2lua(const char* name, int(*c_func)(lua_State *L)) {
+void lua_wrapper::reg_func2lua(const char* name, int(*c_func)(lua_State *L)) {
 	lua_pushcfunction(g_lua_State, c_func);
 	lua_setglobal(g_lua_State, name);
 }
 
-static bool 
-pushFunctionByHandler(int nHandler)
+static bool pushFunctionByHandler(int nHandler)
 {
 	toluafix_get_function_by_refid(g_lua_State, nHandler);                  /* L: ... func */
 	if (!lua_isfunction(g_lua_State, -1))
@@ -142,8 +168,7 @@ pushFunctionByHandler(int nHandler)
 	return true;
 }
 
-static int 
-executeFunction(int numArgs)
+static int executeFunction(int numArgs)
 {
 	int functionIndex = -(numArgs + 1);
 	if (!lua_isfunction(g_lua_State, functionIndex))
@@ -202,8 +227,7 @@ executeFunction(int numArgs)
 	return ret;
 }
 
-int 
-lua_wrapper::execute_script_handler(int nHandler, int numArgs) {
+int lua_wrapper::execute_script_handler(int nHandler, int numArgs) {
 	int ret = 0;
 	if (pushFunctionByHandler(nHandler))                                /* L: ... arg1 arg2 ... func */
 	{
@@ -217,8 +241,7 @@ lua_wrapper::execute_script_handler(int nHandler, int numArgs) {
 	return ret;
 }
 
-void 
-lua_wrapper::remove_script_handler(int nHandler)
+void lua_wrapper::remove_script_handler(int nHandler)
 {
 	toluafix_remove_function_by_refid(g_lua_State, nHandler);
 }

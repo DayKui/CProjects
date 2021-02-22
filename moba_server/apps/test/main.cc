@@ -21,27 +21,14 @@ static void on_logger_timer(void* udata) {
 	log_debug("on_logger_timer");
 }
 
-static void on_query_cb(const char* err, std::vector<std::vector<std::string>>* result) {
+static void on_query_cb(const char* err, MYSQL_RES* result, void* udata) {
 	if (err) {
 		printf("err");
 		return;
 	}
-	if (result!=NULL)
-	{
-		int count = result->size();
-		for (int i = 0; i < count; i++)
-		{
-			std::vector < std::string > vec = result->at(i);
-			for (vector<std::string>::const_iterator iter = vec.cbegin(); iter != vec.cend(); iter++)
-			{
-				cout << (*iter) << endl;
-			}
-			cout << "---------------------" << endl;
-		}
-	}
+
 	printf("success");
 }
-
 
 static void on_open_cb(const char* err, void* context, void* udata) {
 	if (err != NULL) {
@@ -60,7 +47,7 @@ static void test_db() {
 	mysql_wrapper::connect("127.0.0.1", 3306, "class_sql", "root", "123456", on_open_cb);
 }
 
-static void on_redis_query(const char* err, redisReply* result) {
+static void on_redis_query(const char* err, redisReply* result, void* udata) {
 	if (err) {
 		printf("%s\n", err);
 		return;
@@ -69,7 +56,7 @@ static void on_redis_query(const char* err, redisReply* result) {
 	printf("success\n");
 }
 
-static void on_redis_open(const char* err, void* context) {
+static void on_redis_open(const char* err, void* context, void* udata) {
 	if (err != NULL) {
 		printf("%s\n", err);
 		return;
@@ -87,7 +74,7 @@ static void test_redis() {
 int main(int*argc, char**argv)
 {
 	//test_db();
-	test_redis();
+	//test_redis();
 	proto_man::init(PROTO_BUF);
 	init_pf_cmd_map();
 
@@ -110,7 +97,6 @@ int main(int*argc, char**argv)
 	netbus::instance()->start_ws_server(8001);
 	//netbus::instance()->run();
 
-	//
 	lua_wrapper::init();
 	lua_wrapper::exe_lua_file("./main.lua");
 	// 

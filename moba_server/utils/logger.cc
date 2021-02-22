@@ -18,10 +18,11 @@ static uv_fs_t g_file_handle;
 static uint32_t g_current_day;
 static uint32_t g_last_second;
 static char g_format_time[64] = { 0 };
-static char* g_log_level[] = { "DEBUG ", "WARNING ", "ERROR "};
+static char* g_log_level[] = { "DEBUG ", "WARNING ", "ERROR " };
 static bool g_std_out = false;
 
-static void open_file(tm* time_struct) {
+static void
+open_file(tm* time_struct) {
 	int result = 0;
 	char fileName[128] = { 0 };
 
@@ -38,7 +39,8 @@ static void open_file(tm* time_struct) {
 	}
 }
 
-static void prepare_file() {
+static void
+prepare_file() {
 	time_t  now = time(NULL);
 	now += 8 * 60 * 60;
 	tm* time_struct = gmtime(&now);
@@ -55,7 +57,8 @@ static void prepare_file() {
 
 }
 
-static void format_time() {
+static void
+format_time() {
 	time_t  now = time(NULL);
 	now += 8 * 60 * 60;
 	tm* time_struct = gmtime(&now);
@@ -68,7 +71,8 @@ static void format_time() {
 	}
 }
 
-void logger::init(char* path, char* prefix, bool std_output) {
+void
+logger::init(const char* path, const char* prefix, bool std_output) {
 	g_prefix = prefix;
 	g_log_path = path;
 	g_std_out = std_output;
@@ -78,7 +82,7 @@ void logger::init(char* path, char* prefix, bool std_output) {
 	}
 
 	std::string tmp_path = g_log_path;
-	std::string::size_type find = tmp_path.find("/");
+	int find = tmp_path.find("/");
 	uv_fs_t req;
 	int result;
 
@@ -89,7 +93,8 @@ void logger::init(char* path, char* prefix, bool std_output) {
 	uv_fs_req_cleanup(&req);
 }
 
-void logger::log(const char* file_name,
+void
+logger::log(const char* file_name,
 	int line_num,
 	int level, const char* msg, ...) {
 	prepare_file();
@@ -124,6 +129,3 @@ void logger::log(const char* file_name,
 		printf("%s:%u\n[%s] %s\n", file_name, line_num, g_log_level[level], msg_content);
 	}
 }
-
-
-

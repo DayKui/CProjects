@@ -1,0 +1,68 @@
+20210219 22:32:06 DEBUG e:\gitproject\moba_server\apps\test\main.cc:83  
+1613745126
+20210219 22:32:06 DEBUG e:\gitproject\moba_server\apps\test\main.cc:84  
+1613664000
+20210219 22:32:06 DEBUG e:\gitproject\moba_server\apps\test\main.cc:85  
+1517414400
+20210219 22:32:06 DEBUG e:\gitproject\moba_server\apps\test\main.cc:91  
+2021-02-18 00:00:00
+20210219 22:32:06 DEBUG ./main.lua:1  
+HelloWorld
+20210219 22:32:08 DEBUG ./main.lua:33  
+event call
+20210219 22:32:43 DEBUG e:\gitproject\moba_server\apps\test\main.cc:83  
+1613745163
+20210219 22:32:43 DEBUG e:\gitproject\moba_server\apps\test\main.cc:84  
+1613664000
+20210219 22:32:43 DEBUG e:\gitproject\moba_server\apps\test\main.cc:85  
+1517414400
+20210219 22:32:43 DEBUG e:\gitproject\moba_server\apps\test\main.cc:91  
+2021-02-18 00:00:00
+20210219 22:32:43 DEBUG ./main.lua:1  
+HelloWorld
+20210219 22:32:44 DEBUG ./main.lua:33  
+event call
+20210219 22:35:16 DEBUG e:\gitproject\moba_server\apps\test\main.cc:83  
+1613745316
+20210219 22:35:16 DEBUG e:\gitproject\moba_server\apps\test\main.cc:84  
+1613664000
+20210219 22:35:16 DEBUG e:\gitproject\moba_server\apps\test\main.cc:85  
+1517414400
+20210219 22:35:16 DEBUG e:\gitproject\moba_server\apps\test\main.cc:91  
+2021-02-18 00:00:00
+20210219 22:35:17 ERROR trunk:0  
+./main.lua:77: 'end' expected (to close 'function' at line 52) near <eof>
+20210219 22:37:17 DEBUG e:\gitproject\moba_server\apps\test\main.cc:83  
+1613745437
+20210219 22:37:17 DEBUG e:\gitproject\moba_server\apps\test\main.cc:84  
+1613664000
+20210219 22:37:17 DEBUG e:\gitproject\moba_server\apps\test\main.cc:85  
+1517414400
+20210219 22:37:17 DEBUG e:\gitproject\moba_server\apps\test\main.cc:91  
+2021-02-18 00:00:00
+20210219 22:37:17 DEBUG ./main.lua:1  
+HelloWorld
+20210219 22:37:17 DEBUG ./main.lua:33  
+event call
+20210219 22:39:25 DEBUG e:\gitproject\moba_server\apps\test\main.cc:83  
+1613745565
+20210219 22:39:33 DEBUG e:\gitproject\moba_server\apps\test\main.cc:83  
+1613745573
+20210219 22:39:33 DEBUG e:\gitproject\moba_server\apps\test\main.cc:84  
+1613664000
+20210219 22:39:33 DEBUG e:\gitproject\moba_server\apps\test\main.cc:85  
+1517414400
+20210219 22:39:33 DEBUG e:\gitproject\moba_server\apps\test\main.cc:91  
+2021-02-18 00:00:00
+20210219 22:39:33 DEBUG ./main.lua:1  
+HelloWorld
+20210219 22:39:33 DEBUG ./main.lua:33  
+event call
+20210219 23:38:05 DEBUG e:\gitproject\moba_server\apps\test\main.cc:83  
+1613749085
+20210219 23:38:06 DEBUG e:\gitproject\moba_server\apps\test\main.cc:84  
+1613664000
+20210219 23:38:07 DEBUG e:\gitproject\moba_server\apps\test\main.cc:85  
+1517414400
+20210219 23:38:12 DEBUG e:\gitproject\moba_server\apps\test\main.cc:91  
+2021-02-18 00:00:00

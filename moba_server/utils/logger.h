@@ -13,10 +13,10 @@ enum {
 
 class logger {
 public:
-	static void init(char* path, char* prefix, bool std_output = false);
-	static void log(const char* file_name, 
-	                int line_num, 
-	                int level, const char* msg, ...);
+	static void init(const char* path, const char* prefix, bool std_output = false);
+	static void log(const char* file_name,
+		int line_num,
+		int level, const char* msg, ...);
 };
 
 
