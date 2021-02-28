@@ -11,9 +11,6 @@
     <Filter Include="utils">
       <UniqueIdentifier>{92690db5-8ecb-4630-aab3-a2946a8622b9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="apps\test">
-      <UniqueIdentifier>{cb0fe5be-890c-4406-9d5b-a29e79aea662}</UniqueIdentifier>
-    </Filter>
     <Filter Include="3rd">
       <UniqueIdentifier>{0c9615f4-c0ed-4a68-94f6-ce72bf30b9b9}</UniqueIdentifier>
     </Filter>
@@ -38,9 +35,6 @@
     <Filter Include="3rd\mjson">
       <UniqueIdentifier>{9f706372-3b6f-493e-87e8-34824f641554}</UniqueIdentifier>
     </Filter>
-    <Filter Include="apps\test\proto">
-      <UniqueIdentifier>{8d68b4cc-0baf-4ed2-9ca1-2bd96fb16be5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="database">
       <UniqueIdentifier>{56c70434-55bd-4b9a-a9c5-3f69e497bbb0}</UniqueIdentifier>
     </Filter>
@@ -53,11 +47,14 @@
     <Filter Include="3rd\tolua">
       <UniqueIdentifier>{b17469c1-f7a2-44b2-a2e0-4ef30dc4eb45}</UniqueIdentifier>
     </Filter>
+    <Filter Include="apps\lua_test">
+      <UniqueIdentifier>{4660f786-ad9a-41b9-ad27-ab93eb9914de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="apps\lua_test\proto">
+      <UniqueIdentifier>{0de03cd1-1a7a-4941-aabd-5cc6e824fab1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\apps\test\main.cc">
-      <Filter>apps\test</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\3rd\libuv\src\fs-poll.c">
       <Filter>3rd\libuv\src</Filter>
     </ClCompile>
@@ -183,12 +180,6 @@
     </ClCompile>
     <ClCompile Include="..\..\netbus\proto_man.cc">
       <Filter>netbus</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\apps\test\proto\game.pb.cc">
-      <Filter>apps\test\proto</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\apps\test\proto\pf_cmd_map.cc">
-      <Filter>apps\test\proto</Filter>
     </ClCompile>
     <ClCompile Include="..\..\netbus\udp_session.cc">
       <Filter>netbus</Filter>
@@ -346,9 +337,23 @@
     <ClCompile Include="..\..\lua_wrapper\service_export_to_lua.cc">
       <Filter>lua_wrapper</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\lua_wrapper\session_export_to_lua.cc" />
     <ClCompile Include="..\..\lua_wrapper\scheduler_export_to_lua.cc">
       <Filter>lua_wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua_wrapper\session_export_to_lua.cc">
+      <Filter>lua_wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua_wrapper\netbus_export_to_lua.cc">
+      <Filter>lua_wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua_wrapper\proto_man_export_to_lua.cc">
+      <Filter>lua_wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\apps\lua_test\proto\game.pb.cc">
+      <Filter>apps\lua_test\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\apps\lua_test\main.cc">
+      <Filter>apps\lua_test</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -463,9 +468,6 @@
     <ClInclude Include="..\..\netbus\proto_man.h">
       <Filter>netbus</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\apps\test\proto\pf_cmd_map.h">
-      <Filter>apps\test\proto</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\netbus\service.h">
       <Filter>netbus</Filter>
     </ClInclude>
@@ -489,9 +491,6 @@
     </ClInclude>
     <ClInclude Include="..\..\database\mysql_wrapper.h">
       <Filter>database</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\apps\test\proto\game.pb.h">
-      <Filter>apps\test\proto</Filter>
     </ClInclude>
     <ClInclude Include="..\..\3rd\lua-5.3.4\src\lapi.h">
       <Filter>3rd\lua</Filter>
@@ -595,11 +594,20 @@
     <ClInclude Include="..\..\lua_wrapper\service_export_to_lua.h">
       <Filter>lua_wrapper</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\lua_wrapper\session_export_to_lua.h">
-      <Filter>netbus</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\lua_wrapper\scheduler_export_to_lua.h">
       <Filter>lua_wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lua_wrapper\session_export_to_lua.h">
+      <Filter>lua_wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lua_wrapper\netbus_export_to_lua.h">
+      <Filter>lua_wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lua_wrapper\proto_man_export_to_lua.h">
+      <Filter>lua_wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\apps\lua_test\proto\game.pb.h">
+      <Filter>apps\lua_test\proto</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
