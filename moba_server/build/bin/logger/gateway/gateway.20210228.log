@@ -1,0 +1,62 @@
+20210228 23:05:02 DEBUG e:\gitproject\moba_server\apps\test\main.cc:83  
+1614524702
+20210228 23:05:02 DEBUG e:\gitproject\moba_server\apps\test\main.cc:84  
+1614441600
+20210228 23:05:02 DEBUG e:\gitproject\moba_server\apps\test\main.cc:85  
+1517414400
+20210228 23:05:02 DEBUG e:\gitproject\moba_server\apps\test\main.cc:91  
+2021-02-27 00:00:00
+20210228 23:05:02 ERROR trunk:0  
+cannot open ./main.lua: No such file or directory
+20210228 23:05:53 DEBUG e:\gitproject\moba_server\apps\test\main.cc:83  
+1614524753
+20210228 23:05:53 DEBUG e:\gitproject\moba_server\apps\test\main.cc:84  
+1614441600
+20210228 23:05:53 DEBUG e:\gitproject\moba_server\apps\test\main.cc:85  
+1517414400
+20210228 23:05:53 DEBUG e:\gitproject\moba_server\apps\test\main.cc:91  
+2021-02-27 00:00:00
+20210228 23:05:53 ERROR trunk:0  
+cannot open ./main.lua: No such file or directory
+20210228 23:06:05 DEBUG e:\gitproject\moba_server\apps\test\main.cc:83  
+1614524765
+20210228 23:06:05 DEBUG e:\gitproject\moba_server\apps\test\main.cc:84  
+1614441600
+20210228 23:06:05 DEBUG e:\gitproject\moba_server\apps\test\main.cc:85  
+1517414400
+20210228 23:06:05 DEBUG e:\gitproject\moba_server\apps\test\main.cc:91  
+2021-02-27 00:00:00
+20210228 23:06:05 ERROR trunk:0  
+cannot open ./main.lua: No such file or directory
+20210228 23:06:30 DEBUG e:\gitproject\moba_server\apps\test\main.cc:83  
+1614524790
+20210228 23:06:30 DEBUG e:\gitproject\moba_server\apps\test\main.cc:84  
+1614441600
+20210228 23:06:30 DEBUG e:\gitproject\moba_server\apps\test\main.cc:85  
+1517414400
+20210228 23:06:30 DEBUG e:\gitproject\moba_server\apps\test\main.cc:91  
+2021-02-27 00:00:00
+20210228 23:06:30 ERROR trunk:0  
+cannot open ./main.lua: No such file or directory
+20210228 23:08:31 DEBUG e:\gitproject\moba_server\apps\test\main.cc:83  
+1614524911
+20210228 23:08:31 DEBUG e:\gitproject\moba_server\apps\test\main.cc:84  
+1614441600
+20210228 23:08:31 DEBUG e:\gitproject\moba_server\apps\test\main.cc:85  
+1517414400
+20210228 23:08:31 DEBUG e:\gitproject\moba_server\apps\test\main.cc:91  
+2021-02-27 00:00:00
+20210228 23:08:31 ERROR trunk:0  
+cannot open ./main.lua: No such file or directory
+20210228 23:11:28 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
+20210228 23:12:17 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
+20210228 23:13:12 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
+20210228 23:14:07 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
+20210228 23:14:20 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
+20210228 23:16:37 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
