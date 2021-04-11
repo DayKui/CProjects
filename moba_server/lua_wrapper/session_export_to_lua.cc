@@ -271,28 +271,39 @@ lua_send_msg(lua_State* tolua_S) {
 		goto lua_failed;
 	}
 
-	lua_getfield(tolua_S, 2, "1"); // 3
-	lua_getfield(tolua_S, 2, "2"); // 4
-	lua_getfield(tolua_S, 2, "3"); // 5
-	lua_getfield(tolua_S, 2, "4"); // 6
-
 	struct cmd_msg msg;
-	msg.stype = lua_tointeger(tolua_S, 3);
-	msg.ctype = lua_tointeger(tolua_S, 4);
-	msg.utag = lua_tointeger(tolua_S, 5);
 
+	int n = luaL_len(tolua_S, 2);
+	if (n != 4) {
+		goto lua_failed;
+	}
+
+	lua_pushnumber(tolua_S, 1);
+	lua_gettable(tolua_S, 2);
+	msg.stype = luaL_checkinteger(tolua_S, -1);
+
+	lua_pushnumber(tolua_S, 2);
+	lua_gettable(tolua_S, 2);
+	msg.ctype = luaL_checkinteger(tolua_S, -1);
+
+	lua_pushnumber(tolua_S, 3);
+	lua_gettable(tolua_S, 2);
+	msg.utag = luaL_checkinteger(tolua_S, -1);
+
+	lua_pushnumber(tolua_S, 4);
+	lua_gettable(tolua_S, 2);
 	if (proto_man::proto_type() == PROTO_JSON) {
-		msg.body = (char*)lua_tostring(tolua_S, 6);
+		msg.body = (char*)lua_tostring(tolua_S, -1);
 		s->send_msg(&msg);
 	}
 	else {
-		if (!lua_istable(tolua_S, 6)) {
+		if (!lua_istable(tolua_S, -1)) {
 			msg.body = NULL;
 			s->send_msg(&msg);
 		}
 		else { // protobuf message table
 			const char* msg_name = proto_man::protobuf_cmd_name(msg.ctype);
-			msg.body = lua_table_to_protobuf(tolua_S, 6, msg_name);
+			msg.body = lua_table_to_protobuf(tolua_S, lua_gettop(tolua_S), msg_name);
 			s->send_msg(&msg);
 			proto_man::release_message((google::protobuf::Message*)(msg.body));
 		}
@@ -301,8 +312,23 @@ lua_failed:
 	return 0;
 }
 
-static int
-lua_get_addr(lua_State* tolua_S) {
+static int lua_send_raw_cmd(lua_State* tolua_S) {
+	session* s = (session*)tolua_touserdata(tolua_S, 1, NULL);
+	if (s == NULL) {
+		goto lua_failed;
+	}
+
+	struct  raw_cmd* cmd = (struct raw_cmd*)tolua_touserdata(tolua_S, 2, NULL);
+	if (cmd==NULL)
+	{
+		goto lua_failed;
+	}
+	s->send_raw_cmd(cmd);
+lua_failed:
+	return 0;
+}
+
+static int lua_get_addr(lua_State* tolua_S) {
 	session* s = (session*)tolua_touserdata(tolua_S, 1, NULL);
 	if (s == NULL) {
 		goto lua_failed;
@@ -319,17 +345,84 @@ lua_failed:
 	return 0;
 }
 
-int
-register_session_export(lua_State* tolua_S) {
+static int lua_set_utag(lua_State* tolua_S) {
+	session* s = (session*)tolua_touserdata(tolua_S, 1, NULL);
+	if (s == NULL) {
+		goto lua_failed;
+	}
+
+	unsigned int utag =lua_tointeger(tolua_S,2);
+	s->utag = utag;
+
+lua_failed:
+	return 0;
+}
+
+static int lua_get_utag(lua_State* tolua_S) {
+	session* s = (session*)tolua_touserdata(tolua_S, 1, NULL);
+	if (s == NULL) {
+		goto lua_failed;
+	}
+	lua_pushinteger(tolua_S,s->utag);
+	return 1;
+
+lua_failed:
+	return 0;
+}
+
+static int lua_set_uid(lua_State* tolua_S) {
+	session* s = (session*)tolua_touserdata(tolua_S, 1, NULL);
+	if (s == NULL) {
+		goto lua_failed;
+	}
+
+	unsigned int uid = lua_tointeger(tolua_S, 2);
+	s->uid = uid;
+
+lua_failed:
+	return 0;
+}
+
+static int lua_get_uid(lua_State* tolua_S) {
+	session* s = (session*)tolua_touserdata(tolua_S, 1, NULL);
+	if (s == NULL) {
+		goto lua_failed;
+	}
+	lua_pushinteger(tolua_S, s->uid);
+	return 1;
+
+lua_failed:
+	return 0;
+}
+
+static int lua_as_client(lua_State* tolua_S) {
+	session* s = (session*)tolua_touserdata(tolua_S, 1, NULL);
+	if (s == NULL) {
+		goto lua_failed;
+	}
+	lua_pushinteger(tolua_S, s->as_client);
+	return 1;
+
+lua_failed:
+	return 0;
+}
+
+int register_session_export(lua_State* tolua_S) {
 	lua_getglobal(tolua_S, "_G");
 	if (lua_istable(tolua_S, -1)) {
 		tolua_open(tolua_S);
-		tolua_module(tolua_S, "session", 0);
-		tolua_beginmodule(tolua_S, "session");
+		tolua_module(tolua_S, "Session", 0);
+		tolua_beginmodule(tolua_S, "Session");
 
 		tolua_function(tolua_S, "close", lua_session_close);
 		tolua_function(tolua_S, "send_msg", lua_send_msg);
+		tolua_function(tolua_S, "send_raw_cmd", lua_send_raw_cmd);
 		tolua_function(tolua_S, "get_address", lua_get_addr);
+		tolua_function(tolua_S, "set_utag", lua_set_utag);
+		tolua_function(tolua_S, "get_utag", lua_get_utag);
+		tolua_function(tolua_S, "set_uid", lua_set_uid);
+		tolua_function(tolua_S, "get_uid", lua_get_uid);
+		tolua_function(tolua_S, "asclient", lua_as_client);
 		tolua_endmodule(tolua_S);
 	}
 	lua_pop(tolua_S, 1);

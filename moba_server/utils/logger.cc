@@ -20,9 +20,9 @@ static uint32_t g_last_second;
 static char g_format_time[64] = { 0 };
 static char* g_log_level[] = { "DEBUG ", "WARNING ", "ERROR " };
 static bool g_std_out = false;
+static bool is_init = false;
 
-static void
-open_file(tm* time_struct) {
+static void open_file(tm* time_struct) {
 	int result = 0;
 	char fileName[128] = { 0 };
 
@@ -39,8 +39,7 @@ open_file(tm* time_struct) {
 	}
 }
 
-static void
-prepare_file() {
+static void prepare_file() {
 	time_t  now = time(NULL);
 	now += 8 * 60 * 60;
 	tm* time_struct = gmtime(&now);
@@ -57,8 +56,7 @@ prepare_file() {
 
 }
 
-static void
-format_time() {
+static void format_time() {
 	time_t  now = time(NULL);
 	now += 8 * 60 * 60;
 	tm* time_struct = gmtime(&now);
@@ -71,8 +69,12 @@ format_time() {
 	}
 }
 
-void
-logger::init(const char* path, const char* prefix, bool std_output) {
+void logger::init(const char* path, const char* prefix, bool std_output) {
+	if (is_init)
+	{
+		return;
+	}
+	is_init = true;
 	g_prefix = prefix;
 	g_log_path = path;
 	g_std_out = std_output;
@@ -93,8 +95,7 @@ logger::init(const char* path, const char* prefix, bool std_output) {
 	uv_fs_req_cleanup(&req);
 }
 
-void
-logger::log(const char* file_name,
+void logger::log(const char* file_name,
 	int line_num,
 	int level, const char* msg, ...) {
 	prepare_file();

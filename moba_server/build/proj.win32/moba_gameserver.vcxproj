@@ -95,8 +95,8 @@
     <ClCompile Include="..\..\3rd\tolua\tolua_map.c" />
     <ClCompile Include="..\..\3rd\tolua\tolua_push.c" />
     <ClCompile Include="..\..\3rd\tolua\tolua_to.c" />
-    <ClCompile Include="..\..\apps\lua_test\main.cc" />
-    <ClCompile Include="..\..\apps\lua_test\proto\game.pb.cc" />
+    <ClCompile Include="..\..\apps\lua\main.cc" />
+    <ClCompile Include="..\..\apps\lua\proto\game.pb.cc" />
     <ClCompile Include="..\..\database\mysql_wrapper.cc" />
     <ClCompile Include="..\..\database\redis_wrapper.cc" />
     <ClCompile Include="..\..\lua_wrapper\lua_wrapper.cc" />
@@ -117,6 +117,7 @@
     <ClCompile Include="..\..\netbus\ws_protocol.cc" />
     <ClCompile Include="..\..\utils\cache_alloc.c" />
     <ClCompile Include="..\..\utils\logger.cc" />
+    <ClCompile Include="..\..\utils\small_alloc.c" />
     <ClCompile Include="..\..\utils\timestamp.c" />
     <ClCompile Include="..\..\utils\time_list.c" />
   </ItemGroup>
@@ -181,7 +182,7 @@
     <ClInclude Include="..\..\3rd\tolua\tolua++.h" />
     <ClInclude Include="..\..\3rd\tolua\tolua_event.h" />
     <ClInclude Include="..\..\3rd\tolua\tolua_fix.h" />
-    <ClInclude Include="..\..\apps\lua_test\proto\game.pb.h" />
+    <ClInclude Include="..\..\apps\lua\proto\game.pb.h" />
     <ClInclude Include="..\..\database\mysql_wrapper.h" />
     <ClInclude Include="..\..\database\redis_wrapper.h" />
     <ClInclude Include="..\..\lua_wrapper\lua_wrapper.h" />
@@ -203,6 +204,7 @@
     <ClInclude Include="..\..\netbus\ws_protocol.h" />
     <ClInclude Include="..\..\utils\cache_alloc.h" />
     <ClInclude Include="..\..\utils\logger.h" />
+    <ClInclude Include="..\..\utils\small_alloc.h" />
     <ClInclude Include="..\..\utils\timestamp.h" />
     <ClInclude Include="..\..\utils\time_list.h" />
   </ItemGroup>
