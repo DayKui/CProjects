@@ -1,0 +1,14 @@
+20210331 00:12:55 DEBUG ../../apps/lua/scripts/talkroom/main.lua:27  
+start service success !!!!
+20210331 00:12:55 DEBUG ../../apps/lua/scripts/talkroom/main.lua:32  
+register trm service success!!!
+20210331 00:16:38 DEBUG ../../apps/lua/scripts/talkroom/main.lua:27  
+start service success !!!!
+20210331 00:16:38 DEBUG ../../apps/lua/scripts/talkroom/main.lua:32  
+register trm service success!!!
+20210331 00:16:43 DEBUG ../../apps/lua/scripts/talkroom/main.lua:27  
+start service success !!!!
+20210331 00:16:43 DEBUG ../../apps/lua/scripts/talkroom/main.lua:32  
+register trm service success!!!
+20210331 00:17:17 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:86  
+remove from talk room: 127.0.0.1 : 64516

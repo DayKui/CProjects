@@ -1,0 +1,18 @@
+20210330 22:53:35 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
+20210330 22:53:35 DEBUG ../../apps/lua_test/scripts/main.lua:32  
+register trm service success!!!
+20210330 22:54:24 DEBUG ../../apps/lua_test/scripts/trm_server.lua:86  
+remove from talk room: 127.0.0.1 : 63097
+20210330 23:12:30 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
+20210330 23:12:30 DEBUG ../../apps/lua_test/scripts/main.lua:32  
+register trm service success!!!
+20210330 23:12:47 DEBUG ../../apps/lua_test/scripts/trm_server.lua:86  
+remove from talk room: 127.0.0.1 : 63331
+20210330 23:35:24 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
+20210330 23:35:24 DEBUG ../../apps/lua_test/scripts/main.lua:32  
+register trm service success!!!
+20210330 23:35:53 DEBUG ../../apps/lua_test/scripts/trm_server.lua:86  
+remove from talk room: 127.0.0.1 : 63647

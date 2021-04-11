@@ -1,0 +1,6 @@
+20210401 00:03:54 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Tcp server listen At 6080
+20210401 00:03:54 DEBUG ../../apps/lua/scripts/gateway/main.lua:25  
+Ws server listen At 6081
+20210401 00:03:54 DEBUG ../../apps/lua/scripts/gateway/main.lua:35  
+register gw_servce:[1] success!!!

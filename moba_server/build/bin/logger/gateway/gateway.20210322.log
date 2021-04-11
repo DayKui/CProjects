@@ -1,0 +1,20 @@
+20210322 00:10:02 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
+20210322 00:10:02 DEBUG ../../apps/lua_test/scripts/main.lua:32  
+register trm service success!!!
+20210322 00:12:03 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
+20210322 00:12:03 DEBUG ../../apps/lua_test/scripts/main.lua:32  
+register trm service success!!!
+20210322 00:14:44 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
+20210322 00:14:44 DEBUG ../../apps/lua_test/scripts/main.lua:32  
+register trm service success!!!
+20210322 00:15:15 DEBUG ../../apps/lua_test/scripts/trm_server.lua:86  
+remove from talk room: 204.204.204.204 : 52428
+20210322 00:15:50 DEBUG ../../apps/lua_test/scripts/main.lua:27  
+start service success !!!!
+20210322 00:15:50 DEBUG ../../apps/lua_test/scripts/main.lua:32  
+register trm service success!!!
+20210322 00:16:35 DEBUG ../../apps/lua_test/scripts/trm_server.lua:86  
+remove from talk room: 204.204.204.204 : 52428
