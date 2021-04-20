@@ -122,7 +122,7 @@ function on_gw_session_disconnect(s, stype)
 	if client_sessions_ukey[utag] ~= nil then 
 		client_sessions_ukey[utag] = nil
 		Session.set_utag(s, 0)
-		table.remove(client_sessions_ukey, utag)
+		--table.remove(client_sessions_ukey, utag)
 	end
 	-- end
 
@@ -130,7 +130,7 @@ function on_gw_session_disconnect(s, stype)
 	local uid = Session.get_uid(s)
 	if client_sessions_uid[uid] ~= nil then 
 		client_sessions_uid[uid] = nil
-		table.remove(client_sessions_uid, uid)
+		--table.remove(client_sessions_uid, uid)
 	end
 	-- end
 

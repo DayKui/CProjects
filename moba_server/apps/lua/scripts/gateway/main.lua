@@ -37,5 +37,3 @@ for k, v in pairs(servers) do
   		print("register gw_servce:[" .. v.stype.. "] failed!!!")
 	end
 end
-
-

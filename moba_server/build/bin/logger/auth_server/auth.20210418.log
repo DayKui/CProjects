@@ -1,0 +1,22 @@
+20210418 22:48:17 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210418 22:48:17 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210418 22:48:17 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210418 22:48:37 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:7  
+guest	1	1	1	8JvrDstUNDuTNnnCKFEw4pKFs27z9xSr
+20210418 22:48:37 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:7  
+guest	1	1	1	8JvrDstUNDuTNnnCKFEw4pKFs27z9xSr
+20210418 22:48:37 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:35  
+1	gst101126
+20210418 23:50:02 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210418 23:50:02 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210418 23:50:03 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210418 23:50:19 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+1	1	1	8JvrDstUNDuTNnnCKFEw4pKFs27z9xSr
+20210418 23:50:19 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:55  
+1	gst101126

@@ -25,7 +25,6 @@ int main(int argc, char** argv) {
 	//netbus::instance()->tcp_connect("127.0.0.1", 7788, NULL, NULL);
 
 	if (argc != 3) { // ≤‚ ‘
-		printf("222222222222222222,argc=%d:argv1=%s:argv2=%s", argc, argv[0], argv[1]);
 		std::string search_path = "../../apps/lua/scripts/";
 		lua_wrapper::add_search_path(search_path);
 		std::string lua_file = search_path + "gateway/main.lua";
@@ -33,7 +32,6 @@ int main(int argc, char** argv) {
 		// end 
 	}
 	else {
-		printf("\n33333333333333 argc=%d:argv1=%s:argv2=%s:argv3=%s\n", argc, argv[0], argv[1], argv[2]);
 		std::string search_path = argv[1];
 		if (*(search_path.end() - 1) != '/') {
 			search_path += "/";

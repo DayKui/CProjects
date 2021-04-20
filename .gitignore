@@ -1,0 +1,9 @@
+*.opendb
+*.ipch
+Unity_Moba_Client/.vs/Unity_Moba_Client/v15/.suo
+Unity_Moba_Client/Library/
+Unity_Moba_Client/.vs/
+Unity_Moba_Client/Unity_Moba_Client.sln
+Unity_Moba_Client/Assembly-CSharp.csproj
+Unity_Moba_Client/obj/
+Unity_Moba_Client/Temp/
