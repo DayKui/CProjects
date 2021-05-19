@@ -1,0 +1,50 @@
+20210517 21:56:35 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210517 21:56:35 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210517 21:56:37 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 21:56:44 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 21:56:51 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 21:56:58 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 21:58:09 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210517 21:58:09 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210517 21:58:11 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 21:58:18 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 21:58:25 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 22:00:38 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210517 22:00:38 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210517 22:00:40 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 22:00:47 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 22:00:54 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 22:01:01 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 22:01:08 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 22:01:15 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 22:01:46 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210517 22:01:46 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210517 22:01:49 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210517 22:02:06 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210517 22:02:06 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210517 22:02:08 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)

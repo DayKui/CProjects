@@ -1,0 +1,48 @@
+20210421 23:12:45 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210421 23:12:45 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210421 23:12:47 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210421 23:12:54 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210421 23:13:01 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210421 23:13:07 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+1	1	1	8JvrDstUNDuTNnnCKFEw4pKFs27z9xSr
+20210421 23:13:08 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210421 23:13:15 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210421 23:13:23 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210421 23:13:28 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210421 23:13:35 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+1	1	1	8JvrDstUNDuTNnnCKFEw4pKFs27z9xSr
+20210421 23:13:35 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:58  
+1	gst101126
+20210421 23:13:42 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+1	1	1	8JvrDstUNDuTNnnCKFEw4pKFs27z9xSr
+20210421 23:13:42 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:58  
+1	gst101126
+20210421 23:15:12 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210421 23:15:12 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210421 23:15:12 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210421 23:16:01 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210421 23:16:01 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210421 23:16:01 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210421 23:16:46 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+1	1	1	8JvrDstUNDuTNnnCKFEw4pKFs27z9xSr
+20210421 23:16:46 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:58  
+1	gst101126
+20210421 23:17:25 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+1	1	1	8JvrDstUNDuTNnnCKFEw4pKFs27z9xSr
+20210421 23:17:25 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:58  
+1	gst101126

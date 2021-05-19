@@ -1,0 +1,19 @@
+20210518 23:57:32 ERROR trunk:0  
+error loading module 'cmd_name_map' from file '../../apps/lua/scripts/cmd_name_map.lua':
+	../../apps/lua/scripts/cmd_name_map.lua:6: '}' expected (to close '{' at line 1) near '"EditProfileReq"'
+20210518 23:57:34 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210518 23:57:41 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210518 23:57:48 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210518 23:58:28 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210518 23:58:28 ERROR trunk:0  
+../../apps/lua/scripts/auth_server/auth_service.lua:7: attempt to index a function value (global 'edit_profile')
+20210518 23:58:30 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210518 23:58:37 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210518 23:58:44 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!

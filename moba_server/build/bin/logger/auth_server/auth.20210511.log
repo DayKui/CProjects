@@ -1,0 +1,164 @@
+20210511 23:17:08 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210511 23:17:08 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210511 23:17:08 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210511 23:17:26 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+1	1	1	f8roOYIXNaPFFLe6A5Wqd5Ahvs7BFLCj
+20210511 23:17:26 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:8: attempt to index a nil value (local 'req')
+20210511 23:17:54 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210511 23:17:54 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210511 23:17:54 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210511 23:20:24 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+1	1	1	I2Rk2C5RL4VcSgJaVAqf5zjDul7ugetP
+20210511 23:20:24 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:8: attempt to index a nil value (local 'req')
+20210511 23:21:23 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+1	1	1	2yyoFRs3zN1AgngM8417JpV0ewTbYSCt
+20210511 23:21:23 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:8: attempt to index a nil value (local 'req')
+20210511 23:23:29 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210511 23:23:29 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210511 23:23:30 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210511 23:24:20 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+1	1	1	W7WycQRK7MHzrIVr796Dbr5sCWaqtL7E
+20210511 23:24:20 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:8: attempt to index a nil value (local 'req')
+20210511 23:27:17 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210511 23:27:17 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210511 23:27:17 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210511 23:27:38 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+1	1	1	rK6mLMENPU78ssLIijVAKFDDa8qfV3mz
+20210511 23:27:38 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:8: attempt to index a nil value (local 'req')
+20210511 23:29:48 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210511 23:29:48 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210511 23:29:48 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210511 23:30:00 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:30:00 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	1	gjU3SJG94eC7KA3nafJ9dzWek8KdI1RN
+20210511 23:30:00 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:30:00 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:9: attempt to index a nil value (local 'req')
+20210511 23:31:23 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210511 23:31:23 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210511 23:31:23 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210511 23:32:04 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:32:04 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	1	zOtC9CjMLvS16uf5lyAipDD3bWfkOJWF
+20210511 23:32:04 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:32:04 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:9: attempt to index a nil value (local 'req')
+20210511 23:35:10 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210511 23:35:10 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210511 23:35:11 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210511 23:35:35 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:35:35 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	1	ssEoiYnDSgOdPzao3jlLbBOoD3MP6d0W
+20210511 23:35:35 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:35:35 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:9: attempt to index a nil value (local 'req')
+20210511 23:36:24 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210511 23:36:24 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210511 23:36:24 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210511 23:37:00 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+Auth Recv
+20210511 23:37:00 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:37:00 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	1	DO37ULJP3iIvqjn9oefeMVOUpDWXTfDe
+20210511 23:37:00 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:37:00 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:9: attempt to index a nil value (local 'req')
+20210511 23:47:50 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210511 23:47:50 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210511 23:47:50 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210511 23:48:19 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+Auth Recv
+20210511 23:48:19 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:48:19 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	1	488SKEFaFzJPGJOAvIDiLhUYwAMqVHfv
+20210511 23:48:19 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:48:19 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:9: attempt to index a nil value (local 'req')
+20210511 23:50:40 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+Auth Recv
+20210511 23:50:40 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:50:40 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	2	WvktLL71vrfJrLIDciK6Ox0zFqxvajzg
+20210511 23:50:40 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:50:40 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:9: attempt to index a nil value (local 'req')
+20210511 23:50:42 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+Auth Recv
+20210511 23:50:42 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:50:42 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	2	IOTj32OPcm9pKcQvudasNl6HGJNxddWG
+20210511 23:50:42 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:50:42 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:9: attempt to index a nil value (local 'req')
+20210511 23:51:02 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210511 23:51:02 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210511 23:51:02 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210511 23:51:12 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+Auth Recv
+20210511 23:51:12 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:51:12 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210511 23:51:12 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:51:12 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210511 23:51:12 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:69  
+14	gst101126
+20210511 23:52:09 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+Auth Recv
+20210511 23:52:09 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210511 23:52:09 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	2	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210511 23:52:09 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:69  
+14	gst101126

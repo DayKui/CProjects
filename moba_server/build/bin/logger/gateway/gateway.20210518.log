@@ -1,0 +1,31 @@
+20210518 23:57:33 ERROR trunk:0  
+error loading module 'cmd_name_map' from file '../../apps/lua/scripts/cmd_name_map.lua':
+	../../apps/lua/scripts/cmd_name_map.lua:6: '}' expected (to close '{' at line 1) near '"EditProfileReq"'
+20210518 23:58:30 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Tcp server listen At 6080
+20210518 23:58:30 DEBUG ../../apps/lua/scripts/gateway/main.lua:25  
+Ws server listen At 6081
+20210518 23:58:30 DEBUG ../../apps/lua/scripts/gateway/main.lua:35  
+register gw_servce:[1] success!!!
+20210518 23:58:31 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth Server]127.0.0.1:8000
+20210518 23:58:31 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth Server]127.0.0.1:8000
+20210518 23:58:54 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:117  
+1	1	0
+20210518 23:58:54 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:161  
+gateway disconnect [Auth Server]
+20210518 23:58:56 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth Server]127.0.0.1:8000
+20210518 23:58:56 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth Server]127.0.0.1:8000
+20210518 23:59:19 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:117  
+1	1	0
+20210518 23:59:19 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:161  
+gateway disconnect [Auth Server]
+20210518 23:59:21 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth Server]127.0.0.1:8000
+20210518 23:59:21 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth Server]127.0.0.1:8000
+20210518 23:59:54 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:161  
+gateway disconnect [Auth Server]

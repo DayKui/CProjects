@@ -1,0 +1,195 @@
+20210519 00:00:04 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 00:00:04 ERROR trunk:0  
+../../apps/lua/scripts/auth_server/auth_service.lua:7: attempt to index a function value (global 'edit_profile')
+20210519 00:00:04 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 00:03:29 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 00:03:29 ERROR trunk:0  
+../../apps/lua/scripts/auth_server/auth_service.lua:7: attempt to index a function value (global 'edit_profile')
+20210519 00:03:29 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 00:06:22 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 00:06:22 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210519 00:06:22 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 00:06:58 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 00:06:58 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210519 00:06:58 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 00:07:10 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv
+20210519 00:07:10 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210519 00:07:10 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210519 00:07:10 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:69  
+14	gst101126
+20210519 00:11:04 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv
+20210519 00:11:04 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210519 00:11:04 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	2	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210519 00:11:04 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:69  
+14	gst101126
+20210519 22:22:23 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 22:22:23 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210519 22:22:23 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 22:22:34 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv
+20210519 22:22:34 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:8  
+33333333333333
+20210519 22:22:34 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210519 22:22:34 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:69  
+14	gst101126
+20210519 22:27:53 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 22:27:53 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210519 22:27:53 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 22:28:03 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv
+20210519 22:28:03 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210519 22:28:03 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210519 22:28:03 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:68  
+1	gst101126
+20210519 22:30:49 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 22:30:49 ERROR trunk:0  
+error loading module 'auth_server/auth_service' from file '../../apps/lua/scripts/auth_server/auth_service.lua':
+	../../apps/lua/scripts/auth_server/auth_service.lua:12: unexpected symbol near '['
+20210519 22:30:49 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 22:31:53 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 22:31:53 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210519 22:31:53 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 22:32:06 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	1
+20210519 22:32:06 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210519 22:32:06 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:68  
+1	gst101126
+20210519 22:39:58 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 22:39:58 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210519 22:39:58 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 22:40:15 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	1
+20210519 22:40:15 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210519 22:40:15 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:68  
+1	gst101126
+20210519 22:45:41 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 22:45:41 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210519 22:45:42 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 22:46:10 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	1
+20210519 22:46:10 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210519 22:46:10 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:68  
+1	gst101126
+20210519 22:46:56 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	5
+20210519 22:46:56 DEBUG ../../apps/lua/scripts/auth_server/edit_profile.lua:12  
+edit_profile	1	tdk111	6	0
+20210519 22:46:56 ERROR e:\gitproject\moba_server\lua_wrapper\service_export_to_lua.cc:103  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/edit_profile.lua:39: attempt to call a nil value (field 'edit_profile')
+20210519 22:54:20 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 22:54:20 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210519 22:54:20 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 22:54:44 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	1
+20210519 22:54:44 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210519 22:54:44 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:68  
+1	gst101126
+20210519 22:55:11 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	5
+20210519 22:55:11 DEBUG ../../apps/lua/scripts/auth_server/edit_profile.lua:11  
+edit_profile	1	tdk111	1	1
+20210519 22:55:11 ERROR e:\gitproject\moba_server\lua_wrapper\service_export_to_lua.cc:103  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/edit_profile.lua:36: attempt to call a nil value (field 'edit_profile')
+20210519 23:01:48 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 23:01:48 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210519 23:01:48 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 23:02:02 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	1
+20210519 23:02:02 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210519 23:02:02 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:68  
+1	gst101126
+20210519 23:02:18 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	5
+20210519 23:02:18 DEBUG ../../apps/lua/scripts/auth_server/edit_profile.lua:11  
+edit_profile	1	tdk111	6	0
+20210519 23:02:18 ERROR e:\gitproject\moba_server\lua_wrapper\service_export_to_lua.cc:103  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/edit_profile.lua:36: attempt to call a nil value (field 'edit_profile')
+20210519 23:08:31 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 23:08:31 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210519 23:08:31 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 23:09:13 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 23:09:13 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210519 23:09:13 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 23:09:27 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	1
+20210519 23:09:27 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210519 23:09:27 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:68  
+1	gst101126
+20210519 23:09:41 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	5
+20210519 23:09:41 DEBUG ../../apps/lua/scripts/auth_server/edit_profile.lua:11  
+edit_profile	1	tdk111	1	0
+20210519 23:10:04 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	5
+20210519 23:10:04 DEBUG ../../apps/lua/scripts/auth_server/edit_profile.lua:11  
+edit_profile	1	tdk222	9	1
+20210519 23:10:34 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210519 23:10:34 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210519 23:10:34 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210519 23:10:51 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	1
+20210519 23:10:51 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:10  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210519 23:10:51 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:68  
+1	tdk222
+20210519 23:11:04 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	5
+20210519 23:11:04 DEBUG ../../apps/lua/scripts/auth_server/edit_profile.lua:11  
+edit_profile	1	tdk333	3	0
