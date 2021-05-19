@@ -162,7 +162,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 546978446}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3275491c64aea5141bf97e1e471785cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 72950c2b5a7450148b3d8439ccfb8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &546978449
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1136, y: 640}
+  m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 583272014}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5859c0577dd0c1049a277d5e1e8d0362, type: 3}
+  m_Script: {fileID: 11500000, guid: db88995b6fb42744a9ac0ed8b2c2295a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &591294922
@@ -592,7 +592,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1215, y: 717}
+  m_SizeDelta: {x: 1802, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1973339642
 MonoBehaviour:
@@ -613,7 +613,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 943e02db101874f46a6c0b6035f181cc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 47f4bf387c3f99947914b60744ccef74, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

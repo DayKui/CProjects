@@ -16,16 +16,11 @@ using namespace std;
 #include "../../database/redis_wrapper.h"
 #include "../../lua_wrapper/lua_wrapper.h"
 
-
-
 int main(int argc, char** argv) {
 
 	netbus::instance()->init();
 	lua_wrapper::init();
 	//netbus::instance()->tcp_connect("127.0.0.1", 7788, NULL, NULL);
-	printf("0:%s\n", argv[0]);
-	printf("1:%s\n",argv[1]);
-	printf("2:%s\n", argv[2]);
 	if (argc != 3) { // ≤‚ ‘
 		std::string search_path = "../../apps/lua/scripts/";
 		lua_wrapper::add_search_path(search_path);

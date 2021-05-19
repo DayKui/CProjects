@@ -5,10 +5,9 @@ local Cmd = require("Cmd")
 
 -- {stype, ctype, utag, body}
 function login(s, req)
-	print("33333333333333")
 	local g_key = req[4].guest_key
 	local utag = req[3];
-	print(req[1], req[2], req[3], req[4].guest_key)
+	print("login",req[1], req[2], req[3], req[4].guest_key)
 
 	-- 判断gkey的合法性，是否为字符串，并且长度为32
 	if type(g_key) ~= "string" or string.len(g_key) ~= 32 then 

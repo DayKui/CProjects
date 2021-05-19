@@ -25,7 +25,7 @@ unsigned char* tp_protocol::package(const unsigned char* raw_data, int len, int*
 	// unsigned char* data_buf = (unsigned char*)malloc((*pkg_len));
 	unsigned char* data_buf = (unsigned char*)cache_alloc(wbuf_allocer, (*pkg_len));
 	data_buf[0] = (unsigned char)((*pkg_len) & 0x000000ff);
-	data_buf[1] = (unsigned char)(((*pkg_len) & 0x0000ff00) >> 8);
+	data_buf[1] = (unsigned char)(((*pkg_len) &0x0000ff00) >> 8);
 	memcpy(data_buf + head_size, raw_data, len);
 	return data_buf;
 }

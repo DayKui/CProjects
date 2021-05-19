@@ -52,6 +52,7 @@ bool service_man::on_recv_raw_cmd(session* s, struct raw_cmd* raw)
 
 void service_man::on_session_disconnect(session* s) 
 {
+
 	for (int i = 0; i < MAX_SERVICE; i++)
 	{
 		if (g_service_set[i] == NULL) {

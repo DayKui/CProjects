@@ -9,7 +9,7 @@ auth_service_handlers[Cmd.eEditProfileReq] = edit_profile.do_edit_profile
 
 -- {stype, ctype, utag, body}
 function on_auth_recv_cmd(s, msg)
-	print("Auth Recv")
+	print("Auth Recv",msg[2])
 	if auth_service_handlers[msg[2]] then 
 		auth_service_handlers[msg[2]](s, msg)
 	end
