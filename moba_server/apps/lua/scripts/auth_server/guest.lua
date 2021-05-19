@@ -4,17 +4,28 @@ local Stype = require("Stype")
 local Cmd = require("Cmd")
 
 -- {stype, ctype, utag, body}
-function login(s, msg)
-    local g_key = msg[4].guest_key
-	local utag = msg[3];
-	print(msg[1], msg[2], msg[3], msg[4].guest_key)
+function login(s, req)
+	print("33333333333333")
+	local g_key = req[4].guest_key
+	local utag = req[3];
+	print(req[1], req[2], req[3], req[4].guest_key)
 
+	-- 判断gkey的合法性，是否为字符串，并且长度为32
+	if type(g_key) ~= "string" or string.len(g_key) ~= 32 then 
+		local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
+			status = Respones.InvalidParams,
+		}}
+	
+		Session.send_msg(s, msg)
+		return
+	end
 
 	mysql_center.get_guest_uinfo(g_key, function (err, uinfo)
 		if err then -- 告诉客户端系统错误信息;
-            local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
+			local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
 				status = Respones.SystemErr,
 			}}
+
 			Session.send_msg(s, msg)
 			return
 		end
@@ -22,33 +33,36 @@ function login(s, msg)
 		if uinfo == nil then -- 没有查到对应的 g_key的信息
 			mysql_center.insert_guest_user(g_key, function(err, ret)
 				if err then -- 告诉客户端系统错误信息;
-                    local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
+					local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
 						status = Respones.SystemErr,
 					}}
 
 					Session.send_msg(s, msg)
 					return
 				end
-				login(s, msg)
+
+				login(s, req)
 			end)
 			return
 		end
 
 		-- 找到了我们gkey所对应的游客数据;
 		if uinfo.status ~= 0 then --账号被查封
-            local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
+			local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
 				status = Respones.UserIsFreeze,
 			}}
 
 			Session.send_msg(s, msg)
+			return
 		end
 
 		if uinfo.is_guest ~= 1 then  --账号已经不是游客账号了
-            local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
+			local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
 				status = Respones.UserIsNotGuest,
 			}}
 
 			Session.send_msg(s, msg)
+			return
 		end
 		-- end
 
@@ -60,7 +74,7 @@ function login(s, msg)
 				uface = uinfo.uface,
 				usex  = uinfo.usex,
 				uvip  = uinfo.uvip,
-				uid   = uinfo.uid, 
+				uid = uinfo.uid, 
 			}
 		}}
 		Session.send_msg(s, msg)

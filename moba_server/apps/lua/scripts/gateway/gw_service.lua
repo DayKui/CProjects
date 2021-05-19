@@ -9,6 +9,9 @@ local client_sessions_ukey = {}
 -- uid来找client session
 local client_sessions_uid = {}
 
+local Stype = require("Stype")
+local Cmd = require("Cmd")
+local Respones = require("Respones")
 
 function connect_to_server(stype, ip, port)
 	Netbus.tcp_connect(ip, port, function(err, session)
@@ -44,23 +47,67 @@ function gw_service_init()
 	-- end 
 end
 
+function is_login_return_cmd(ctype)
+	if ctype == Cmd.eGuestLoginRes then 
+		return true
+	end
+
+	return false
+end
+
 function send_to_client(server_session, raw_cmd)
 	local stype, ctype, utag = RawCmd.read_header(raw_cmd)
 	local client_session = nil
-	-- 很有可能是uid来做key,可是同时要排除掉不是 ukey来做的?
-	-- 必须要区分这个命令登陆前还是登陆后，
-	--只有命令的类型才知道我们是要到uid里查，还是到ukey里查;
-	-- 暂时先预留出来，因为和登陆有关系要衔接好;
-	if client_sessions_uid[utag] ~= nil then 
-		client_session = client_sessions_uid[utag]
-	elseif client_sessions_ukey[utag] ~= nil then
+
+	if is_login_return_cmd(ctype) then
+		print("login cmd 1111111")
 		client_session = client_sessions_ukey[utag]
+		client_sessions_ukey[utag] = nil
+
+		if client_session == nil then 
+			return
+		end
+
+		local body = RawCmd.read_body(raw_cmd)
+
+		if body.status ~= Respones.OK then 
+			RawCmd.set_utag(raw_cmd, 0)
+			Session.send_raw_cmd(client_session, raw_cmd)
+			return
+		end 
+
+		local uid = body.uinfo.uid
+		-- 判断一下，是否有已经登陆的session??
+		if client_sessions_uid[uid] and client_sessions_uid[uid] ~= client_session then
+			local relogin_cmd = {Stype.Auth, Cmd.eRelogin, 0, nil}
+			Session.send_msg(client_sessions_uid[uid], relogin_cmd)
+			Session.close(client_sessions_uid[uid])
+			print("Close Session uid=",uid)
+			-- client_sessions_uid[uid] = nil	
+		end
+
+		client_sessions_uid[uid] = client_session
+		Session.set_uid(client_session, uid)
+
+		body.uinfo.uid = 0;
+		local login_res = {stype, ctype, 0, body}
+		Session.send_msg(client_session, login_res)
+		return
 	end
 
+	client_session = client_sessions_uid[utag]
 	RawCmd.set_utag(raw_cmd, 0)
 	if client_session then 
 		Session.send_raw_cmd(client_session, raw_cmd)
 	end
+end
+
+function is_login_request_cmd(ctype)
+	if ctype == Cmd.eGuestLoginReq then 
+		return true
+	end
+
+	return false
 end
 
 -- s 来自于客户端
@@ -74,24 +121,27 @@ function send_to_server(client_session, raw_cmd)
 		return
 	end
 
-	local uid = Session.get_uid(client_session)
-
-	if uid == 0 then -- 登陆以前
+	if is_login_request_cmd(ctype) then 
 		utag = Session.get_utag(client_session)
 		if utag == 0 then 
 			utag = g_ukey
 			g_ukey = g_ukey + 1
-			client_sessions_ukey[utag] = client_session
 			Session.set_utag(client_session, utag)
 		end
-	else -- 登陆以后
+		client_sessions_ukey[utag] = client_session
+	else
+		local uid = Session.get_uid(client_session)
 		utag = uid
-		client_sessions_uid[utag] = client_session
+		if utag == 0 then --改操作要先登陆
+			return
+		end
+		-- client_sessions_uid[uid] = client_session;
 	end
 
 	-- 打上utag然后转发给我们的服务器
 	RawCmd.set_utag(raw_cmd, utag)
 	Session.send_raw_cmd(server_session, raw_cmd)
+	
 end
 
 -- {stype, ctype, utag, body}
@@ -115,28 +165,31 @@ function on_gw_session_disconnect(s, stype)
 		end
 		return
 	end
-
 	-- 连接到网关的客户端断线了
 	-- 把客户端从临时映射表里面删除
 	local utag = Session.get_utag(s)
-	if client_sessions_ukey[utag] ~= nil then 
-		client_sessions_ukey[utag] = nil
-		Session.set_utag(s, 0)
-		--table.remove(client_sessions_ukey, utag)
+	if client_sessions_ukey[utag] ~= nil and client_sessions_ukey[utag] == s then 
+		client_sessions_ukey[utag] = nil -- 保证utag --> value 删除
+ 		Session.set_utag(s, 0)
 	end
 	-- end
 
 	-- 把客户端从uid映射表里移除
 	local uid = Session.get_uid(s)
-	if client_sessions_uid[uid] ~= nil then 
+	if client_sessions_uid[uid] ~= nil and client_sessions_uid[uid] == s then 
 		client_sessions_uid[uid] = nil
-		--table.remove(client_sessions_uid, uid)
 	end
 	-- end
 
+	local server_session = server_session_man[stype]
+	if server_session == nil then
+		return
+	end
+
 	-- 客户端uid用户掉线了，我要把这个事件告诉和网关所连接的stype类服务器
 	if uid ~= 0 then 
-
+		local user_lost = {stype, Cmd.eUserLostConn, uid, nil}
+		Session.send_msg(server_session, user_lost)
 	end
 end
 
