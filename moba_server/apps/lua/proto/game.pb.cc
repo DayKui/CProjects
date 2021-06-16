@@ -24,6 +24,11 @@ class GuestLoginReqDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<GuestLoginReq>
       _instance;
 } _GuestLoginReq_default_instance_;
+class UnameLoginReqDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<UnameLoginReq>
+      _instance;
+} _UnameLoginReq_default_instance_;
 class UserCenterInfoDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<UserCenterInfo>
@@ -34,6 +39,11 @@ class GuestLoginResDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<GuestLoginRes>
       _instance;
 } _GuestLoginRes_default_instance_;
+class UnameLoginResDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<UnameLoginRes>
+      _instance;
+} _UnameLoginRes_default_instance_;
 class EditProfileReqDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<EditProfileReq>
@@ -44,6 +54,36 @@ class EditProfileResDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<EditProfileRes>
       _instance;
 } _EditProfileRes_default_instance_;
+class AccountUpgradeReqDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AccountUpgradeReq>
+      _instance;
+} _AccountUpgradeReq_default_instance_;
+class AccountUpgradeResDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AccountUpgradeRes>
+      _instance;
+} _AccountUpgradeRes_default_instance_;
+class LoginOutResDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<LoginOutRes>
+      _instance;
+} _LoginOutRes_default_instance_;
+class UserGameInfoDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<UserGameInfo>
+      _instance;
+} _UserGameInfo_default_instance_;
+class GetUgameInfoResDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<GetUgameInfoRes>
+      _instance;
+} _GetUgameInfoRes_default_instance_;
+class RecvLoginBonuesResDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<RecvLoginBonuesRes>
+      _instance;
+} _RecvLoginBonuesRes_default_instance_;
 namespace protobuf_game_2eproto {
 void InitDefaultsGuestLoginReqImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -64,6 +104,27 @@ void InitDefaultsGuestLoginReqImpl() {
 void InitDefaultsGuestLoginReq() {
   static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
   ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsGuestLoginReqImpl);
+}
+
+void InitDefaultsUnameLoginReqImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::_UnameLoginReq_default_instance_;
+    new (ptr) ::UnameLoginReq();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::UnameLoginReq::InitAsDefaultInstance();
+}
+
+void InitDefaultsUnameLoginReq() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsUnameLoginReqImpl);
 }
 
 void InitDefaultsUserCenterInfoImpl() {
@@ -109,6 +170,28 @@ void InitDefaultsGuestLoginRes() {
   ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsGuestLoginResImpl);
 }
 
+void InitDefaultsUnameLoginResImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  protobuf_game_2eproto::InitDefaultsUserCenterInfo();
+  {
+    void* ptr = &::_UnameLoginRes_default_instance_;
+    new (ptr) ::UnameLoginRes();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::UnameLoginRes::InitAsDefaultInstance();
+}
+
+void InitDefaultsUnameLoginRes() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsUnameLoginResImpl);
+}
+
 void InitDefaultsEditProfileReqImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -151,7 +234,134 @@ void InitDefaultsEditProfileRes() {
   ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsEditProfileResImpl);
 }
 
-::google::protobuf::Metadata file_level_metadata[5];
+void InitDefaultsAccountUpgradeReqImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::_AccountUpgradeReq_default_instance_;
+    new (ptr) ::AccountUpgradeReq();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::AccountUpgradeReq::InitAsDefaultInstance();
+}
+
+void InitDefaultsAccountUpgradeReq() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsAccountUpgradeReqImpl);
+}
+
+void InitDefaultsAccountUpgradeResImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::_AccountUpgradeRes_default_instance_;
+    new (ptr) ::AccountUpgradeRes();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::AccountUpgradeRes::InitAsDefaultInstance();
+}
+
+void InitDefaultsAccountUpgradeRes() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsAccountUpgradeResImpl);
+}
+
+void InitDefaultsLoginOutResImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::_LoginOutRes_default_instance_;
+    new (ptr) ::LoginOutRes();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::LoginOutRes::InitAsDefaultInstance();
+}
+
+void InitDefaultsLoginOutRes() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsLoginOutResImpl);
+}
+
+void InitDefaultsUserGameInfoImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::_UserGameInfo_default_instance_;
+    new (ptr) ::UserGameInfo();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::UserGameInfo::InitAsDefaultInstance();
+}
+
+void InitDefaultsUserGameInfo() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsUserGameInfoImpl);
+}
+
+void InitDefaultsGetUgameInfoResImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  protobuf_game_2eproto::InitDefaultsUserGameInfo();
+  {
+    void* ptr = &::_GetUgameInfoRes_default_instance_;
+    new (ptr) ::GetUgameInfoRes();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GetUgameInfoRes::InitAsDefaultInstance();
+}
+
+void InitDefaultsGetUgameInfoRes() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsGetUgameInfoResImpl);
+}
+
+void InitDefaultsRecvLoginBonuesResImpl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
+#else
+  ::google::protobuf::internal::InitProtobufDefaults();
+#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
+  {
+    void* ptr = &::_RecvLoginBonuesRes_default_instance_;
+    new (ptr) ::RecvLoginBonuesRes();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::RecvLoginBonuesRes::InitAsDefaultInstance();
+}
+
+void InitDefaultsRecvLoginBonuesRes() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsRecvLoginBonuesResImpl);
+}
+
+::google::protobuf::Metadata file_level_metadata[13];
 const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[2];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
@@ -162,6 +372,15 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GuestLoginReq, guest_key_),
   0,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UnameLoginReq, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UnameLoginReq, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UnameLoginReq, uname_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UnameLoginReq, upwd_),
+  0,
+  1,
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserCenterInfo, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserCenterInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -186,6 +405,15 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GuestLoginRes, uinfo_),
   1,
   0,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UnameLoginRes, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UnameLoginRes, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UnameLoginRes, status_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UnameLoginRes, uinfo_),
+  1,
+  0,
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::EditProfileReq, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::EditProfileReq, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -204,21 +432,103 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::EditProfileRes, status_),
   0,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::AccountUpgradeReq, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::AccountUpgradeReq, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::AccountUpgradeReq, uname_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::AccountUpgradeReq, upwd_md5_),
+  0,
+  1,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::AccountUpgradeRes, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::AccountUpgradeRes, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::AccountUpgradeRes, status_),
+  0,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::LoginOutRes, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::LoginOutRes, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::LoginOutRes, status_),
+  0,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, uchip_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, uexp_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, uvip_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, uchip2_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, uchip3_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, udata1_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, udata2_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, udata3_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, bonues_status_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, bonues_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::UserGameInfo, days_),
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GetUgameInfoRes, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GetUgameInfoRes, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GetUgameInfoRes, status_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GetUgameInfoRes, uinfo_),
+  1,
+  0,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::RecvLoginBonuesRes, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::RecvLoginBonuesRes, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::RecvLoginBonuesRes, status_),
+  0,
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 6, sizeof(::GuestLoginReq)},
-  { 7, 17, sizeof(::UserCenterInfo)},
-  { 22, 29, sizeof(::GuestLoginRes)},
-  { 31, 39, sizeof(::EditProfileReq)},
-  { 42, 48, sizeof(::EditProfileRes)},
+  { 7, 14, sizeof(::UnameLoginReq)},
+  { 16, 26, sizeof(::UserCenterInfo)},
+  { 31, 38, sizeof(::GuestLoginRes)},
+  { 40, 47, sizeof(::UnameLoginRes)},
+  { 49, 57, sizeof(::EditProfileReq)},
+  { 60, 66, sizeof(::EditProfileRes)},
+  { 67, 74, sizeof(::AccountUpgradeReq)},
+  { 76, 82, sizeof(::AccountUpgradeRes)},
+  { 83, 89, sizeof(::LoginOutRes)},
+  { 90, 106, sizeof(::UserGameInfo)},
+  { 117, 124, sizeof(::GetUgameInfoRes)},
+  { 126, 132, sizeof(::RecvLoginBonuesRes)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::_GuestLoginReq_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::_UnameLoginReq_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::_UserCenterInfo_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::_GuestLoginRes_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::_UnameLoginRes_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::_EditProfileReq_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::_EditProfileRes_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::_AccountUpgradeReq_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::_AccountUpgradeRes_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::_LoginOutRes_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::_UserGameInfo_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::_GetUgameInfoRes_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::_RecvLoginBonuesRes_default_instance_),
 };
 
 void protobuf_AssignDescriptors() {
@@ -237,28 +547,47 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 5);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 13);
 }
 
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n\ngame.proto\"\"\n\rGuestLoginReq\022\021\n\tguest_k"
-      "ey\030\001 \002(\t\"W\n\016UserCenterInfo\022\r\n\005unick\030\001 \002("
-      "\t\022\r\n\005uface\030\002 \002(\005\022\014\n\004usex\030\003 \002(\005\022\014\n\004uvip\030\004"
-      " \002(\005\022\013\n\003uid\030\005 \002(\005\"\?\n\rGuestLoginRes\022\016\n\006st"
-      "atus\030\001 \002(\005\022\036\n\005uinfo\030\002 \001(\0132\017.UserCenterIn"
-      "fo\"<\n\016EditProfileReq\022\r\n\005unick\030\001 \002(\t\022\r\n\005u"
-      "face\030\002 \002(\005\022\014\n\004usex\030\003 \002(\005\" \n\016EditProfileR"
-      "es\022\016\n\006status\030\001 \002(\005*<\n\005Stype\022\022\n\016INVALIDI_"
-      "STYPE\020\000\022\010\n\004Auth\020\001\022\n\n\006System\020\002\022\t\n\005Logic\020\003"
-      "*\211\001\n\003Cmd\022\017\n\013INVALID_CMD\020\000\022\022\n\016eGuestLogin"
-      "Req\020\001\022\022\n\016eGuestLoginRes\020\002\022\014\n\010eRelogin\020\003\022"
-      "\021\n\reUserLostConn\020\004\022\023\n\017eEditProfileReq\020\005\022"
-      "\023\n\017eEditProfileRes\020\006"
+      "ey\030\001 \002(\t\",\n\rUnameLoginReq\022\r\n\005uname\030\001 \002(\t"
+      "\022\014\n\004upwd\030\002 \002(\t\"W\n\016UserCenterInfo\022\r\n\005unic"
+      "k\030\001 \002(\t\022\r\n\005uface\030\002 \002(\005\022\014\n\004usex\030\003 \002(\005\022\014\n\004"
+      "uvip\030\004 \002(\005\022\013\n\003uid\030\005 \002(\005\"\?\n\rGuestLoginRes"
+      "\022\016\n\006status\030\001 \002(\005\022\036\n\005uinfo\030\002 \001(\0132\017.UserCe"
+      "nterInfo\"\?\n\rUnameLoginRes\022\016\n\006status\030\001 \002("
+      "\005\022\036\n\005uinfo\030\002 \001(\0132\017.UserCenterInfo\"<\n\016Edi"
+      "tProfileReq\022\r\n\005unick\030\001 \002(\t\022\r\n\005uface\030\002 \002("
+      "\005\022\014\n\004usex\030\003 \002(\005\" \n\016EditProfileRes\022\016\n\006sta"
+      "tus\030\001 \002(\005\"4\n\021AccountUpgradeReq\022\r\n\005uname\030"
+      "\001 \002(\t\022\020\n\010upwd_md5\030\002 \002(\t\"#\n\021AccountUpgrad"
+      "eRes\022\016\n\006status\030\001 \002(\005\"\035\n\013LoginOutRes\022\016\n\006s"
+      "tatus\030\001 \002(\005\"\276\001\n\014UserGameInfo\022\r\n\005uchip\030\001 "
+      "\002(\005\022\014\n\004uexp\030\002 \002(\005\022\014\n\004uvip\030\003 \002(\005\022\016\n\006uchip"
+      "2\030\004 \002(\005\022\016\n\006uchip3\030\005 \002(\005\022\016\n\006udata1\030\006 \002(\005\022"
+      "\016\n\006udata2\030\007 \002(\005\022\016\n\006udata3\030\010 \002(\005\022\025\n\rbonue"
+      "s_status\030\t \002(\005\022\016\n\006bonues\030\n \002(\005\022\014\n\004days\030\013"
+      " \002(\005\"\?\n\017GetUgameInfoRes\022\016\n\006status\030\001 \002(\005\022"
+      "\034\n\005uinfo\030\002 \001(\0132\r.UserGameInfo\"$\n\022RecvLog"
+      "inBonuesRes\022\016\n\006status\030\001 \002(\005*<\n\005Stype\022\022\n\016"
+      "INVALIDI_STYPE\020\000\022\010\n\004Auth\020\001\022\n\n\006System\020\002\022\t"
+      "\n\005Logic\020\003*\343\002\n\003Cmd\022\017\n\013INVALID_CMD\020\000\022\022\n\016eG"
+      "uestLoginReq\020\001\022\022\n\016eGuestLoginRes\020\002\022\014\n\010eR"
+      "elogin\020\003\022\021\n\reUserLostConn\020\004\022\023\n\017eEditProf"
+      "ileReq\020\005\022\023\n\017eEditProfileRes\020\006\022\026\n\022eAccoun"
+      "tUpgradeReq\020\007\022\026\n\022eAccountUpgradeRes\020\010\022\022\n"
+      "\016eUnameLoginReq\020\t\022\022\n\016eUnameLoginRes\020\n\022\020\n"
+      "\014eLoginOutReq\020\013\022\020\n\014eLoginOutRes\020\014\022\024\n\020eGe"
+      "tUgameInfoReq\020\r\022\024\n\020eGetUgameInfoRes\020\016\022\027\n"
+      "\023eRecvLoginBonuesReq\020\017\022\027\n\023eRecvLoginBonu"
+      "esRes\020\020"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 500);
+      descriptor, 1247);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "game.proto", &protobuf_RegisterTypes);
 }
@@ -303,6 +632,16 @@ bool Cmd_IsValid(int value) {
     case 4:
     case 5:
     case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
       return true;
     default:
       return false;
@@ -570,6 +909,357 @@ void GuestLoginReq::InternalSwap(GuestLoginReq* other) {
 }
 
 ::google::protobuf::Metadata GuestLoginReq::GetMetadata() const {
+  protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void UnameLoginReq::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int UnameLoginReq::kUnameFieldNumber;
+const int UnameLoginReq::kUpwdFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+UnameLoginReq::UnameLoginReq()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_game_2eproto::InitDefaultsUnameLoginReq();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:UnameLoginReq)
+}
+UnameLoginReq::UnameLoginReq(const UnameLoginReq& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  uname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.has_uname()) {
+    uname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.uname_);
+  }
+  upwd_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.has_upwd()) {
+    upwd_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.upwd_);
+  }
+  // @@protoc_insertion_point(copy_constructor:UnameLoginReq)
+}
+
+void UnameLoginReq::SharedCtor() {
+  _cached_size_ = 0;
+  uname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  upwd_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+UnameLoginReq::~UnameLoginReq() {
+  // @@protoc_insertion_point(destructor:UnameLoginReq)
+  SharedDtor();
+}
+
+void UnameLoginReq::SharedDtor() {
+  uname_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  upwd_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+void UnameLoginReq::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* UnameLoginReq::descriptor() {
+  ::protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const UnameLoginReq& UnameLoginReq::default_instance() {
+  ::protobuf_game_2eproto::InitDefaultsUnameLoginReq();
+  return *internal_default_instance();
+}
+
+UnameLoginReq* UnameLoginReq::New(::google::protobuf::Arena* arena) const {
+  UnameLoginReq* n = new UnameLoginReq;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void UnameLoginReq::Clear() {
+// @@protoc_insertion_point(message_clear_start:UnameLoginReq)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      GOOGLE_DCHECK(!uname_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
+      (*uname_.UnsafeRawStringPointer())->clear();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      GOOGLE_DCHECK(!upwd_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
+      (*upwd_.UnsafeRawStringPointer())->clear();
+    }
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool UnameLoginReq::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:UnameLoginReq)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required string uname = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_uname()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->uname().data(), static_cast<int>(this->uname().length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "UnameLoginReq.uname");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required string upwd = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_upwd()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->upwd().data(), static_cast<int>(this->upwd().length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "UnameLoginReq.upwd");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:UnameLoginReq)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:UnameLoginReq)
+  return false;
+#undef DO_
+}
+
+void UnameLoginReq::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:UnameLoginReq)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required string uname = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->uname().data(), static_cast<int>(this->uname().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "UnameLoginReq.uname");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->uname(), output);
+  }
+
+  // required string upwd = 2;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->upwd().data(), static_cast<int>(this->upwd().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "UnameLoginReq.upwd");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->upwd(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:UnameLoginReq)
+}
+
+::google::protobuf::uint8* UnameLoginReq::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:UnameLoginReq)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required string uname = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->uname().data(), static_cast<int>(this->uname().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "UnameLoginReq.uname");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        1, this->uname(), target);
+  }
+
+  // required string upwd = 2;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->upwd().data(), static_cast<int>(this->upwd().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "UnameLoginReq.upwd");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        2, this->upwd(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:UnameLoginReq)
+  return target;
+}
+
+size_t UnameLoginReq::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:UnameLoginReq)
+  size_t total_size = 0;
+
+  if (has_uname()) {
+    // required string uname = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->uname());
+  }
+
+  if (has_upwd()) {
+    // required string upwd = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->upwd());
+  }
+
+  return total_size;
+}
+size_t UnameLoginReq::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:UnameLoginReq)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+    // required string uname = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->uname());
+
+    // required string upwd = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->upwd());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void UnameLoginReq::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:UnameLoginReq)
+  GOOGLE_DCHECK_NE(&from, this);
+  const UnameLoginReq* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const UnameLoginReq>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:UnameLoginReq)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:UnameLoginReq)
+    MergeFrom(*source);
+  }
+}
+
+void UnameLoginReq::MergeFrom(const UnameLoginReq& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:UnameLoginReq)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      set_has_uname();
+      uname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.uname_);
+    }
+    if (cached_has_bits & 0x00000002u) {
+      set_has_upwd();
+      upwd_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.upwd_);
+    }
+  }
+}
+
+void UnameLoginReq::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:UnameLoginReq)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void UnameLoginReq::CopyFrom(const UnameLoginReq& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:UnameLoginReq)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool UnameLoginReq::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+  return true;
+}
+
+void UnameLoginReq::Swap(UnameLoginReq* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void UnameLoginReq::InternalSwap(UnameLoginReq* other) {
+  using std::swap;
+  uname_.Swap(&other->uname_);
+  upwd_.Swap(&other->upwd_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata UnameLoginReq::GetMetadata() const {
   protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -1339,6 +2029,308 @@ void GuestLoginRes::InternalSwap(GuestLoginRes* other) {
 
 // ===================================================================
 
+void UnameLoginRes::InitAsDefaultInstance() {
+  ::_UnameLoginRes_default_instance_._instance.get_mutable()->uinfo_ = const_cast< ::UserCenterInfo*>(
+      ::UserCenterInfo::internal_default_instance());
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int UnameLoginRes::kStatusFieldNumber;
+const int UnameLoginRes::kUinfoFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+UnameLoginRes::UnameLoginRes()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_game_2eproto::InitDefaultsUnameLoginRes();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:UnameLoginRes)
+}
+UnameLoginRes::UnameLoginRes(const UnameLoginRes& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_uinfo()) {
+    uinfo_ = new ::UserCenterInfo(*from.uinfo_);
+  } else {
+    uinfo_ = NULL;
+  }
+  status_ = from.status_;
+  // @@protoc_insertion_point(copy_constructor:UnameLoginRes)
+}
+
+void UnameLoginRes::SharedCtor() {
+  _cached_size_ = 0;
+  ::memset(&uinfo_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&status_) -
+      reinterpret_cast<char*>(&uinfo_)) + sizeof(status_));
+}
+
+UnameLoginRes::~UnameLoginRes() {
+  // @@protoc_insertion_point(destructor:UnameLoginRes)
+  SharedDtor();
+}
+
+void UnameLoginRes::SharedDtor() {
+  if (this != internal_default_instance()) delete uinfo_;
+}
+
+void UnameLoginRes::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* UnameLoginRes::descriptor() {
+  ::protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const UnameLoginRes& UnameLoginRes::default_instance() {
+  ::protobuf_game_2eproto::InitDefaultsUnameLoginRes();
+  return *internal_default_instance();
+}
+
+UnameLoginRes* UnameLoginRes::New(::google::protobuf::Arena* arena) const {
+  UnameLoginRes* n = new UnameLoginRes;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void UnameLoginRes::Clear() {
+// @@protoc_insertion_point(message_clear_start:UnameLoginRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    GOOGLE_DCHECK(uinfo_ != NULL);
+    uinfo_->Clear();
+  }
+  status_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool UnameLoginRes::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:UnameLoginRes)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required int32 status = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+          set_has_status();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &status_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional .UserCenterInfo uinfo = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_uinfo()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:UnameLoginRes)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:UnameLoginRes)
+  return false;
+#undef DO_
+}
+
+void UnameLoginRes::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:UnameLoginRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->status(), output);
+  }
+
+  // optional .UserCenterInfo uinfo = 2;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, *this->uinfo_, output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:UnameLoginRes)
+}
+
+::google::protobuf::uint8* UnameLoginRes::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:UnameLoginRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->status(), target);
+  }
+
+  // optional .UserCenterInfo uinfo = 2;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, *this->uinfo_, deterministic, target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:UnameLoginRes)
+  return target;
+}
+
+size_t UnameLoginRes::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:UnameLoginRes)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  // required int32 status = 1;
+  if (has_status()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->status());
+  }
+  // optional .UserCenterInfo uinfo = 2;
+  if (has_uinfo()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *this->uinfo_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void UnameLoginRes::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:UnameLoginRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  const UnameLoginRes* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const UnameLoginRes>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:UnameLoginRes)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:UnameLoginRes)
+    MergeFrom(*source);
+  }
+}
+
+void UnameLoginRes::MergeFrom(const UnameLoginRes& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:UnameLoginRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      mutable_uinfo()->::UserCenterInfo::MergeFrom(from.uinfo());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      status_ = from.status_;
+    }
+    _has_bits_[0] |= cached_has_bits;
+  }
+}
+
+void UnameLoginRes::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:UnameLoginRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void UnameLoginRes::CopyFrom(const UnameLoginRes& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:UnameLoginRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool UnameLoginRes::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_uinfo()) {
+    if (!this->uinfo_->IsInitialized()) return false;
+  }
+  return true;
+}
+
+void UnameLoginRes::Swap(UnameLoginRes* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void UnameLoginRes::InternalSwap(UnameLoginRes* other) {
+  using std::swap;
+  swap(uinfo_, other->uinfo_);
+  swap(status_, other->status_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata UnameLoginRes::GetMetadata() const {
+  protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
 void EditProfileReq::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -1953,6 +2945,2078 @@ void EditProfileRes::InternalSwap(EditProfileRes* other) {
 }
 
 ::google::protobuf::Metadata EditProfileRes::GetMetadata() const {
+  protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AccountUpgradeReq::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AccountUpgradeReq::kUnameFieldNumber;
+const int AccountUpgradeReq::kUpwdMd5FieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AccountUpgradeReq::AccountUpgradeReq()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_game_2eproto::InitDefaultsAccountUpgradeReq();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:AccountUpgradeReq)
+}
+AccountUpgradeReq::AccountUpgradeReq(const AccountUpgradeReq& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  uname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.has_uname()) {
+    uname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.uname_);
+  }
+  upwd_md5_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.has_upwd_md5()) {
+    upwd_md5_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.upwd_md5_);
+  }
+  // @@protoc_insertion_point(copy_constructor:AccountUpgradeReq)
+}
+
+void AccountUpgradeReq::SharedCtor() {
+  _cached_size_ = 0;
+  uname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  upwd_md5_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+AccountUpgradeReq::~AccountUpgradeReq() {
+  // @@protoc_insertion_point(destructor:AccountUpgradeReq)
+  SharedDtor();
+}
+
+void AccountUpgradeReq::SharedDtor() {
+  uname_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  upwd_md5_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+void AccountUpgradeReq::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* AccountUpgradeReq::descriptor() {
+  ::protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AccountUpgradeReq& AccountUpgradeReq::default_instance() {
+  ::protobuf_game_2eproto::InitDefaultsAccountUpgradeReq();
+  return *internal_default_instance();
+}
+
+AccountUpgradeReq* AccountUpgradeReq::New(::google::protobuf::Arena* arena) const {
+  AccountUpgradeReq* n = new AccountUpgradeReq;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void AccountUpgradeReq::Clear() {
+// @@protoc_insertion_point(message_clear_start:AccountUpgradeReq)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      GOOGLE_DCHECK(!uname_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
+      (*uname_.UnsafeRawStringPointer())->clear();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      GOOGLE_DCHECK(!upwd_md5_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
+      (*upwd_md5_.UnsafeRawStringPointer())->clear();
+    }
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool AccountUpgradeReq::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:AccountUpgradeReq)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required string uname = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_uname()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->uname().data(), static_cast<int>(this->uname().length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "AccountUpgradeReq.uname");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required string upwd_md5 = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_upwd_md5()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->upwd_md5().data(), static_cast<int>(this->upwd_md5().length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "AccountUpgradeReq.upwd_md5");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:AccountUpgradeReq)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:AccountUpgradeReq)
+  return false;
+#undef DO_
+}
+
+void AccountUpgradeReq::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:AccountUpgradeReq)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required string uname = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->uname().data(), static_cast<int>(this->uname().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "AccountUpgradeReq.uname");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->uname(), output);
+  }
+
+  // required string upwd_md5 = 2;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->upwd_md5().data(), static_cast<int>(this->upwd_md5().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "AccountUpgradeReq.upwd_md5");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->upwd_md5(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:AccountUpgradeReq)
+}
+
+::google::protobuf::uint8* AccountUpgradeReq::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:AccountUpgradeReq)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required string uname = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->uname().data(), static_cast<int>(this->uname().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "AccountUpgradeReq.uname");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        1, this->uname(), target);
+  }
+
+  // required string upwd_md5 = 2;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->upwd_md5().data(), static_cast<int>(this->upwd_md5().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "AccountUpgradeReq.upwd_md5");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        2, this->upwd_md5(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:AccountUpgradeReq)
+  return target;
+}
+
+size_t AccountUpgradeReq::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:AccountUpgradeReq)
+  size_t total_size = 0;
+
+  if (has_uname()) {
+    // required string uname = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->uname());
+  }
+
+  if (has_upwd_md5()) {
+    // required string upwd_md5 = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->upwd_md5());
+  }
+
+  return total_size;
+}
+size_t AccountUpgradeReq::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:AccountUpgradeReq)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+    // required string uname = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->uname());
+
+    // required string upwd_md5 = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->upwd_md5());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void AccountUpgradeReq::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:AccountUpgradeReq)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AccountUpgradeReq* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AccountUpgradeReq>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:AccountUpgradeReq)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:AccountUpgradeReq)
+    MergeFrom(*source);
+  }
+}
+
+void AccountUpgradeReq::MergeFrom(const AccountUpgradeReq& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:AccountUpgradeReq)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      set_has_uname();
+      uname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.uname_);
+    }
+    if (cached_has_bits & 0x00000002u) {
+      set_has_upwd_md5();
+      upwd_md5_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.upwd_md5_);
+    }
+  }
+}
+
+void AccountUpgradeReq::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:AccountUpgradeReq)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AccountUpgradeReq::CopyFrom(const AccountUpgradeReq& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:AccountUpgradeReq)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AccountUpgradeReq::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+  return true;
+}
+
+void AccountUpgradeReq::Swap(AccountUpgradeReq* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AccountUpgradeReq::InternalSwap(AccountUpgradeReq* other) {
+  using std::swap;
+  uname_.Swap(&other->uname_);
+  upwd_md5_.Swap(&other->upwd_md5_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata AccountUpgradeReq::GetMetadata() const {
+  protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AccountUpgradeRes::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AccountUpgradeRes::kStatusFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AccountUpgradeRes::AccountUpgradeRes()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_game_2eproto::InitDefaultsAccountUpgradeRes();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:AccountUpgradeRes)
+}
+AccountUpgradeRes::AccountUpgradeRes(const AccountUpgradeRes& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  status_ = from.status_;
+  // @@protoc_insertion_point(copy_constructor:AccountUpgradeRes)
+}
+
+void AccountUpgradeRes::SharedCtor() {
+  _cached_size_ = 0;
+  status_ = 0;
+}
+
+AccountUpgradeRes::~AccountUpgradeRes() {
+  // @@protoc_insertion_point(destructor:AccountUpgradeRes)
+  SharedDtor();
+}
+
+void AccountUpgradeRes::SharedDtor() {
+}
+
+void AccountUpgradeRes::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* AccountUpgradeRes::descriptor() {
+  ::protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AccountUpgradeRes& AccountUpgradeRes::default_instance() {
+  ::protobuf_game_2eproto::InitDefaultsAccountUpgradeRes();
+  return *internal_default_instance();
+}
+
+AccountUpgradeRes* AccountUpgradeRes::New(::google::protobuf::Arena* arena) const {
+  AccountUpgradeRes* n = new AccountUpgradeRes;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void AccountUpgradeRes::Clear() {
+// @@protoc_insertion_point(message_clear_start:AccountUpgradeRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  status_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool AccountUpgradeRes::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:AccountUpgradeRes)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required int32 status = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+          set_has_status();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &status_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:AccountUpgradeRes)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:AccountUpgradeRes)
+  return false;
+#undef DO_
+}
+
+void AccountUpgradeRes::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:AccountUpgradeRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->status(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:AccountUpgradeRes)
+}
+
+::google::protobuf::uint8* AccountUpgradeRes::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:AccountUpgradeRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->status(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:AccountUpgradeRes)
+  return target;
+}
+
+size_t AccountUpgradeRes::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:AccountUpgradeRes)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  // required int32 status = 1;
+  if (has_status()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->status());
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void AccountUpgradeRes::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:AccountUpgradeRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AccountUpgradeRes* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AccountUpgradeRes>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:AccountUpgradeRes)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:AccountUpgradeRes)
+    MergeFrom(*source);
+  }
+}
+
+void AccountUpgradeRes::MergeFrom(const AccountUpgradeRes& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:AccountUpgradeRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_status()) {
+    set_status(from.status());
+  }
+}
+
+void AccountUpgradeRes::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:AccountUpgradeRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AccountUpgradeRes::CopyFrom(const AccountUpgradeRes& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:AccountUpgradeRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AccountUpgradeRes::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  return true;
+}
+
+void AccountUpgradeRes::Swap(AccountUpgradeRes* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AccountUpgradeRes::InternalSwap(AccountUpgradeRes* other) {
+  using std::swap;
+  swap(status_, other->status_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata AccountUpgradeRes::GetMetadata() const {
+  protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void LoginOutRes::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int LoginOutRes::kStatusFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+LoginOutRes::LoginOutRes()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_game_2eproto::InitDefaultsLoginOutRes();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:LoginOutRes)
+}
+LoginOutRes::LoginOutRes(const LoginOutRes& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  status_ = from.status_;
+  // @@protoc_insertion_point(copy_constructor:LoginOutRes)
+}
+
+void LoginOutRes::SharedCtor() {
+  _cached_size_ = 0;
+  status_ = 0;
+}
+
+LoginOutRes::~LoginOutRes() {
+  // @@protoc_insertion_point(destructor:LoginOutRes)
+  SharedDtor();
+}
+
+void LoginOutRes::SharedDtor() {
+}
+
+void LoginOutRes::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* LoginOutRes::descriptor() {
+  ::protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const LoginOutRes& LoginOutRes::default_instance() {
+  ::protobuf_game_2eproto::InitDefaultsLoginOutRes();
+  return *internal_default_instance();
+}
+
+LoginOutRes* LoginOutRes::New(::google::protobuf::Arena* arena) const {
+  LoginOutRes* n = new LoginOutRes;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void LoginOutRes::Clear() {
+// @@protoc_insertion_point(message_clear_start:LoginOutRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  status_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool LoginOutRes::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:LoginOutRes)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required int32 status = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+          set_has_status();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &status_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:LoginOutRes)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:LoginOutRes)
+  return false;
+#undef DO_
+}
+
+void LoginOutRes::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:LoginOutRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->status(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:LoginOutRes)
+}
+
+::google::protobuf::uint8* LoginOutRes::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:LoginOutRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->status(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:LoginOutRes)
+  return target;
+}
+
+size_t LoginOutRes::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:LoginOutRes)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  // required int32 status = 1;
+  if (has_status()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->status());
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void LoginOutRes::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:LoginOutRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  const LoginOutRes* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const LoginOutRes>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:LoginOutRes)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:LoginOutRes)
+    MergeFrom(*source);
+  }
+}
+
+void LoginOutRes::MergeFrom(const LoginOutRes& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:LoginOutRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_status()) {
+    set_status(from.status());
+  }
+}
+
+void LoginOutRes::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:LoginOutRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void LoginOutRes::CopyFrom(const LoginOutRes& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:LoginOutRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool LoginOutRes::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  return true;
+}
+
+void LoginOutRes::Swap(LoginOutRes* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void LoginOutRes::InternalSwap(LoginOutRes* other) {
+  using std::swap;
+  swap(status_, other->status_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata LoginOutRes::GetMetadata() const {
+  protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void UserGameInfo::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int UserGameInfo::kUchipFieldNumber;
+const int UserGameInfo::kUexpFieldNumber;
+const int UserGameInfo::kUvipFieldNumber;
+const int UserGameInfo::kUchip2FieldNumber;
+const int UserGameInfo::kUchip3FieldNumber;
+const int UserGameInfo::kUdata1FieldNumber;
+const int UserGameInfo::kUdata2FieldNumber;
+const int UserGameInfo::kUdata3FieldNumber;
+const int UserGameInfo::kBonuesStatusFieldNumber;
+const int UserGameInfo::kBonuesFieldNumber;
+const int UserGameInfo::kDaysFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+UserGameInfo::UserGameInfo()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_game_2eproto::InitDefaultsUserGameInfo();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:UserGameInfo)
+}
+UserGameInfo::UserGameInfo(const UserGameInfo& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&uchip_, &from.uchip_,
+    static_cast<size_t>(reinterpret_cast<char*>(&days_) -
+    reinterpret_cast<char*>(&uchip_)) + sizeof(days_));
+  // @@protoc_insertion_point(copy_constructor:UserGameInfo)
+}
+
+void UserGameInfo::SharedCtor() {
+  _cached_size_ = 0;
+  ::memset(&uchip_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&days_) -
+      reinterpret_cast<char*>(&uchip_)) + sizeof(days_));
+}
+
+UserGameInfo::~UserGameInfo() {
+  // @@protoc_insertion_point(destructor:UserGameInfo)
+  SharedDtor();
+}
+
+void UserGameInfo::SharedDtor() {
+}
+
+void UserGameInfo::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* UserGameInfo::descriptor() {
+  ::protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const UserGameInfo& UserGameInfo::default_instance() {
+  ::protobuf_game_2eproto::InitDefaultsUserGameInfo();
+  return *internal_default_instance();
+}
+
+UserGameInfo* UserGameInfo::New(::google::protobuf::Arena* arena) const {
+  UserGameInfo* n = new UserGameInfo;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void UserGameInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:UserGameInfo)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 255u) {
+    ::memset(&uchip_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&udata3_) -
+        reinterpret_cast<char*>(&uchip_)) + sizeof(udata3_));
+  }
+  if (cached_has_bits & 1792u) {
+    ::memset(&bonues_status_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&days_) -
+        reinterpret_cast<char*>(&bonues_status_)) + sizeof(days_));
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool UserGameInfo::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:UserGameInfo)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required int32 uchip = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+          set_has_uchip();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &uchip_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required int32 uexp = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+          set_has_uexp();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &uexp_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required int32 uvip = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+          set_has_uvip();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &uvip_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required int32 uchip2 = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+          set_has_uchip2();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &uchip2_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required int32 uchip3 = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
+          set_has_uchip3();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &uchip3_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required int32 udata1 = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
+          set_has_udata1();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &udata1_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required int32 udata2 = 7;
+      case 7: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
+          set_has_udata2();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &udata2_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required int32 udata3 = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
+          set_has_udata3();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &udata3_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required int32 bonues_status = 9;
+      case 9: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
+          set_has_bonues_status();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &bonues_status_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required int32 bonues = 10;
+      case 10: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
+          set_has_bonues();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &bonues_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required int32 days = 11;
+      case 11: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(88u /* 88 & 0xFF */)) {
+          set_has_days();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &days_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:UserGameInfo)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:UserGameInfo)
+  return false;
+#undef DO_
+}
+
+void UserGameInfo::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:UserGameInfo)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 uchip = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->uchip(), output);
+  }
+
+  // required int32 uexp = 2;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->uexp(), output);
+  }
+
+  // required int32 uvip = 3;
+  if (cached_has_bits & 0x00000004u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->uvip(), output);
+  }
+
+  // required int32 uchip2 = 4;
+  if (cached_has_bits & 0x00000008u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->uchip2(), output);
+  }
+
+  // required int32 uchip3 = 5;
+  if (cached_has_bits & 0x00000010u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(5, this->uchip3(), output);
+  }
+
+  // required int32 udata1 = 6;
+  if (cached_has_bits & 0x00000020u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(6, this->udata1(), output);
+  }
+
+  // required int32 udata2 = 7;
+  if (cached_has_bits & 0x00000040u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(7, this->udata2(), output);
+  }
+
+  // required int32 udata3 = 8;
+  if (cached_has_bits & 0x00000080u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(8, this->udata3(), output);
+  }
+
+  // required int32 bonues_status = 9;
+  if (cached_has_bits & 0x00000100u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(9, this->bonues_status(), output);
+  }
+
+  // required int32 bonues = 10;
+  if (cached_has_bits & 0x00000200u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(10, this->bonues(), output);
+  }
+
+  // required int32 days = 11;
+  if (cached_has_bits & 0x00000400u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(11, this->days(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:UserGameInfo)
+}
+
+::google::protobuf::uint8* UserGameInfo::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:UserGameInfo)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 uchip = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->uchip(), target);
+  }
+
+  // required int32 uexp = 2;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->uexp(), target);
+  }
+
+  // required int32 uvip = 3;
+  if (cached_has_bits & 0x00000004u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->uvip(), target);
+  }
+
+  // required int32 uchip2 = 4;
+  if (cached_has_bits & 0x00000008u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->uchip2(), target);
+  }
+
+  // required int32 uchip3 = 5;
+  if (cached_has_bits & 0x00000010u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(5, this->uchip3(), target);
+  }
+
+  // required int32 udata1 = 6;
+  if (cached_has_bits & 0x00000020u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(6, this->udata1(), target);
+  }
+
+  // required int32 udata2 = 7;
+  if (cached_has_bits & 0x00000040u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(7, this->udata2(), target);
+  }
+
+  // required int32 udata3 = 8;
+  if (cached_has_bits & 0x00000080u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(8, this->udata3(), target);
+  }
+
+  // required int32 bonues_status = 9;
+  if (cached_has_bits & 0x00000100u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(9, this->bonues_status(), target);
+  }
+
+  // required int32 bonues = 10;
+  if (cached_has_bits & 0x00000200u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(10, this->bonues(), target);
+  }
+
+  // required int32 days = 11;
+  if (cached_has_bits & 0x00000400u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(11, this->days(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:UserGameInfo)
+  return target;
+}
+
+size_t UserGameInfo::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:UserGameInfo)
+  size_t total_size = 0;
+
+  if (has_uchip()) {
+    // required int32 uchip = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->uchip());
+  }
+
+  if (has_uexp()) {
+    // required int32 uexp = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->uexp());
+  }
+
+  if (has_uvip()) {
+    // required int32 uvip = 3;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->uvip());
+  }
+
+  if (has_uchip2()) {
+    // required int32 uchip2 = 4;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->uchip2());
+  }
+
+  if (has_uchip3()) {
+    // required int32 uchip3 = 5;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->uchip3());
+  }
+
+  if (has_udata1()) {
+    // required int32 udata1 = 6;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->udata1());
+  }
+
+  if (has_udata2()) {
+    // required int32 udata2 = 7;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->udata2());
+  }
+
+  if (has_udata3()) {
+    // required int32 udata3 = 8;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->udata3());
+  }
+
+  if (has_bonues_status()) {
+    // required int32 bonues_status = 9;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->bonues_status());
+  }
+
+  if (has_bonues()) {
+    // required int32 bonues = 10;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->bonues());
+  }
+
+  if (has_days()) {
+    // required int32 days = 11;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->days());
+  }
+
+  return total_size;
+}
+size_t UserGameInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:UserGameInfo)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  if (((_has_bits_[0] & 0x000007ff) ^ 0x000007ff) == 0) {  // All required fields are present.
+    // required int32 uchip = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->uchip());
+
+    // required int32 uexp = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->uexp());
+
+    // required int32 uvip = 3;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->uvip());
+
+    // required int32 uchip2 = 4;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->uchip2());
+
+    // required int32 uchip3 = 5;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->uchip3());
+
+    // required int32 udata1 = 6;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->udata1());
+
+    // required int32 udata2 = 7;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->udata2());
+
+    // required int32 udata3 = 8;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->udata3());
+
+    // required int32 bonues_status = 9;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->bonues_status());
+
+    // required int32 bonues = 10;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->bonues());
+
+    // required int32 days = 11;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->days());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void UserGameInfo::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:UserGameInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const UserGameInfo* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const UserGameInfo>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:UserGameInfo)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:UserGameInfo)
+    MergeFrom(*source);
+  }
+}
+
+void UserGameInfo::MergeFrom(const UserGameInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:UserGameInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 255u) {
+    if (cached_has_bits & 0x00000001u) {
+      uchip_ = from.uchip_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      uexp_ = from.uexp_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      uvip_ = from.uvip_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      uchip2_ = from.uchip2_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      uchip3_ = from.uchip3_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      udata1_ = from.udata1_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      udata2_ = from.udata2_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      udata3_ = from.udata3_;
+    }
+    _has_bits_[0] |= cached_has_bits;
+  }
+  if (cached_has_bits & 1792u) {
+    if (cached_has_bits & 0x00000100u) {
+      bonues_status_ = from.bonues_status_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      bonues_ = from.bonues_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      days_ = from.days_;
+    }
+    _has_bits_[0] |= cached_has_bits;
+  }
+}
+
+void UserGameInfo::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:UserGameInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void UserGameInfo::CopyFrom(const UserGameInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:UserGameInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool UserGameInfo::IsInitialized() const {
+  if ((_has_bits_[0] & 0x000007ff) != 0x000007ff) return false;
+  return true;
+}
+
+void UserGameInfo::Swap(UserGameInfo* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void UserGameInfo::InternalSwap(UserGameInfo* other) {
+  using std::swap;
+  swap(uchip_, other->uchip_);
+  swap(uexp_, other->uexp_);
+  swap(uvip_, other->uvip_);
+  swap(uchip2_, other->uchip2_);
+  swap(uchip3_, other->uchip3_);
+  swap(udata1_, other->udata1_);
+  swap(udata2_, other->udata2_);
+  swap(udata3_, other->udata3_);
+  swap(bonues_status_, other->bonues_status_);
+  swap(bonues_, other->bonues_);
+  swap(days_, other->days_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata UserGameInfo::GetMetadata() const {
+  protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void GetUgameInfoRes::InitAsDefaultInstance() {
+  ::_GetUgameInfoRes_default_instance_._instance.get_mutable()->uinfo_ = const_cast< ::UserGameInfo*>(
+      ::UserGameInfo::internal_default_instance());
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int GetUgameInfoRes::kStatusFieldNumber;
+const int GetUgameInfoRes::kUinfoFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+GetUgameInfoRes::GetUgameInfoRes()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_game_2eproto::InitDefaultsGetUgameInfoRes();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:GetUgameInfoRes)
+}
+GetUgameInfoRes::GetUgameInfoRes(const GetUgameInfoRes& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_uinfo()) {
+    uinfo_ = new ::UserGameInfo(*from.uinfo_);
+  } else {
+    uinfo_ = NULL;
+  }
+  status_ = from.status_;
+  // @@protoc_insertion_point(copy_constructor:GetUgameInfoRes)
+}
+
+void GetUgameInfoRes::SharedCtor() {
+  _cached_size_ = 0;
+  ::memset(&uinfo_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&status_) -
+      reinterpret_cast<char*>(&uinfo_)) + sizeof(status_));
+}
+
+GetUgameInfoRes::~GetUgameInfoRes() {
+  // @@protoc_insertion_point(destructor:GetUgameInfoRes)
+  SharedDtor();
+}
+
+void GetUgameInfoRes::SharedDtor() {
+  if (this != internal_default_instance()) delete uinfo_;
+}
+
+void GetUgameInfoRes::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* GetUgameInfoRes::descriptor() {
+  ::protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const GetUgameInfoRes& GetUgameInfoRes::default_instance() {
+  ::protobuf_game_2eproto::InitDefaultsGetUgameInfoRes();
+  return *internal_default_instance();
+}
+
+GetUgameInfoRes* GetUgameInfoRes::New(::google::protobuf::Arena* arena) const {
+  GetUgameInfoRes* n = new GetUgameInfoRes;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void GetUgameInfoRes::Clear() {
+// @@protoc_insertion_point(message_clear_start:GetUgameInfoRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    GOOGLE_DCHECK(uinfo_ != NULL);
+    uinfo_->Clear();
+  }
+  status_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool GetUgameInfoRes::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:GetUgameInfoRes)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required int32 status = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+          set_has_status();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &status_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional .UserGameInfo uinfo = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_uinfo()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:GetUgameInfoRes)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:GetUgameInfoRes)
+  return false;
+#undef DO_
+}
+
+void GetUgameInfoRes::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:GetUgameInfoRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->status(), output);
+  }
+
+  // optional .UserGameInfo uinfo = 2;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, *this->uinfo_, output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:GetUgameInfoRes)
+}
+
+::google::protobuf::uint8* GetUgameInfoRes::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:GetUgameInfoRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->status(), target);
+  }
+
+  // optional .UserGameInfo uinfo = 2;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, *this->uinfo_, deterministic, target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:GetUgameInfoRes)
+  return target;
+}
+
+size_t GetUgameInfoRes::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:GetUgameInfoRes)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  // required int32 status = 1;
+  if (has_status()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->status());
+  }
+  // optional .UserGameInfo uinfo = 2;
+  if (has_uinfo()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *this->uinfo_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void GetUgameInfoRes::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:GetUgameInfoRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  const GetUgameInfoRes* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const GetUgameInfoRes>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:GetUgameInfoRes)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:GetUgameInfoRes)
+    MergeFrom(*source);
+  }
+}
+
+void GetUgameInfoRes::MergeFrom(const GetUgameInfoRes& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:GetUgameInfoRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      mutable_uinfo()->::UserGameInfo::MergeFrom(from.uinfo());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      status_ = from.status_;
+    }
+    _has_bits_[0] |= cached_has_bits;
+  }
+}
+
+void GetUgameInfoRes::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:GetUgameInfoRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void GetUgameInfoRes::CopyFrom(const GetUgameInfoRes& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:GetUgameInfoRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool GetUgameInfoRes::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_uinfo()) {
+    if (!this->uinfo_->IsInitialized()) return false;
+  }
+  return true;
+}
+
+void GetUgameInfoRes::Swap(GetUgameInfoRes* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void GetUgameInfoRes::InternalSwap(GetUgameInfoRes* other) {
+  using std::swap;
+  swap(uinfo_, other->uinfo_);
+  swap(status_, other->status_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata GetUgameInfoRes::GetMetadata() const {
+  protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void RecvLoginBonuesRes::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int RecvLoginBonuesRes::kStatusFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+RecvLoginBonuesRes::RecvLoginBonuesRes()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    ::protobuf_game_2eproto::InitDefaultsRecvLoginBonuesRes();
+  }
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:RecvLoginBonuesRes)
+}
+RecvLoginBonuesRes::RecvLoginBonuesRes(const RecvLoginBonuesRes& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  status_ = from.status_;
+  // @@protoc_insertion_point(copy_constructor:RecvLoginBonuesRes)
+}
+
+void RecvLoginBonuesRes::SharedCtor() {
+  _cached_size_ = 0;
+  status_ = 0;
+}
+
+RecvLoginBonuesRes::~RecvLoginBonuesRes() {
+  // @@protoc_insertion_point(destructor:RecvLoginBonuesRes)
+  SharedDtor();
+}
+
+void RecvLoginBonuesRes::SharedDtor() {
+}
+
+void RecvLoginBonuesRes::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* RecvLoginBonuesRes::descriptor() {
+  ::protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const RecvLoginBonuesRes& RecvLoginBonuesRes::default_instance() {
+  ::protobuf_game_2eproto::InitDefaultsRecvLoginBonuesRes();
+  return *internal_default_instance();
+}
+
+RecvLoginBonuesRes* RecvLoginBonuesRes::New(::google::protobuf::Arena* arena) const {
+  RecvLoginBonuesRes* n = new RecvLoginBonuesRes;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void RecvLoginBonuesRes::Clear() {
+// @@protoc_insertion_point(message_clear_start:RecvLoginBonuesRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  status_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool RecvLoginBonuesRes::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:RecvLoginBonuesRes)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required int32 status = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+          set_has_status();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &status_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:RecvLoginBonuesRes)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:RecvLoginBonuesRes)
+  return false;
+#undef DO_
+}
+
+void RecvLoginBonuesRes::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:RecvLoginBonuesRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->status(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:RecvLoginBonuesRes)
+}
+
+::google::protobuf::uint8* RecvLoginBonuesRes::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:RecvLoginBonuesRes)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->status(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:RecvLoginBonuesRes)
+  return target;
+}
+
+size_t RecvLoginBonuesRes::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:RecvLoginBonuesRes)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  // required int32 status = 1;
+  if (has_status()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->status());
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void RecvLoginBonuesRes::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:RecvLoginBonuesRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  const RecvLoginBonuesRes* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const RecvLoginBonuesRes>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RecvLoginBonuesRes)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RecvLoginBonuesRes)
+    MergeFrom(*source);
+  }
+}
+
+void RecvLoginBonuesRes::MergeFrom(const RecvLoginBonuesRes& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:RecvLoginBonuesRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_status()) {
+    set_status(from.status());
+  }
+}
+
+void RecvLoginBonuesRes::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:RecvLoginBonuesRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void RecvLoginBonuesRes::CopyFrom(const RecvLoginBonuesRes& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:RecvLoginBonuesRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool RecvLoginBonuesRes::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  return true;
+}
+
+void RecvLoginBonuesRes::Swap(RecvLoginBonuesRes* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void RecvLoginBonuesRes::InternalSwap(RecvLoginBonuesRes* other) {
+  using std::swap;
+  swap(status_, other->status_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata RecvLoginBonuesRes::GetMetadata() const {
   protobuf_game_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_game_2eproto::file_level_metadata[kIndexInFileMessages];
 }
