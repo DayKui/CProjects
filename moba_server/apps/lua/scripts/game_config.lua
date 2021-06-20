@@ -10,15 +10,12 @@ remote_servers[Stype.Auth] = {
 	desic="Auth Server"
 }
 
---[[
 remote_servers[Stype.System] = {
 	stype = Stype.System,
 	ip = "127.0.0.1",
 	port = 8001,
 	desic="System Server"
 }
-]]
-
 
 local game_config = {
 	gateway_tcp_ip = "127.0.0.1",
@@ -36,6 +33,26 @@ local game_config = {
 		db_name = "auth_center",  -- 数据库的名字
 		uname = "root",      -- 登陆数据库的账号
 		upwd = "123456",     -- 登陆数据库的密码
+	},
+
+	center_redis = {
+		host = "127.0.0.1", -- redis所在的host
+		port = 6379, -- reidis 端口
+		db_index = 1, -- 数据1
+	}, 
+
+	game_mysql = {
+		host = "127.0.0.1", -- 数据库所在的host
+		port = 3306,        -- 数据库所在的端口
+		db_name = "moba_game",  -- 数据库的名字
+		uname = "root",      -- 登陆数据库的账号
+		upwd = "123456",     -- 登陆数据库的密码
+	},
+
+	game_redis = {
+		host = "127.0.0.1", -- redis所在的host
+		port = 6379, -- reidis 端口
+		db_index = 2, -- 数据库2
 	},
 }
 

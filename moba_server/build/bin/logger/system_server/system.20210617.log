@@ -1,0 +1,30 @@
+20210617 00:46:01 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210617 00:46:01 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210617 00:46:01 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:16  
+connect to moba game db success!!!!
+20210617 00:52:59 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210617 00:52:59 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210617 00:52:59 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:16  
+connect to moba game db success!!!!
+20210617 23:45:17 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210617 23:45:18 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210617 23:45:18 DEBUG ../../apps/lua/scripts/database/redis_game.lua:17  
+connect to redis game db success!!!!
+20210617 23:45:18 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:16  
+connect to moba game db success!!!!
+20210617 23:45:49 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/database/redis_game.lua:33: attempt to index a nil value (local 'ugame_info')
+20210617 23:47:56 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210617 23:47:56 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210617 23:47:56 DEBUG ../../apps/lua/scripts/database/redis_game.lua:17  
+connect to redis game db success!!!!
+20210617 23:47:56 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:16  
+connect to moba game db success!!!!

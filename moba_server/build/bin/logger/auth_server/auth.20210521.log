@@ -1,0 +1,32 @@
+20210521 00:23:21 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210521 00:23:21 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210521 00:23:21 DEBUG ../../apps/lua/scripts/database/redis_center.lua:17  
+connect to redis center db success!!!!
+20210521 00:23:23 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210521 00:23:30 ERROR ../../apps/lua/scripts/database/mysql_auth_center.lua:11  
+Can't connect to MySQL server on '127.0.0.1' (10061)
+20210521 00:23:41 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210521 00:23:41 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210521 00:23:41 DEBUG ../../apps/lua/scripts/database/redis_center.lua:17  
+connect to redis center db success!!!!
+20210521 00:23:41 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210521 00:24:57 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	1
+20210521 00:24:57 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210521 00:24:57 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210521 00:24:57 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:69  
+1	gst101126
+20210521 00:25:08 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	5
+20210521 00:25:08 DEBUG ../../apps/lua/scripts/auth_server/edit_profile.lua:12  
+edit_profile	1	tdk	1	0
+20210521 00:25:08 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:329  
+[LUA ERROR] ../../apps/lua/scripts/database/redis_center.lua:37: attempt to concatenate a nil value (field 'is_guest')

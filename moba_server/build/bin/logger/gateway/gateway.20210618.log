@@ -1,0 +1,8 @@
+20210618 00:02:45 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:124  
+1	9	0
+20210618 00:02:45 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:64  
+login cmd 1111111
+20210618 00:02:45 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:124  
+2	13	0
+20210618 00:04:29 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:124  
+2	15	0

@@ -1,0 +1,37 @@
+20210527 23:13:14 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210527 23:13:14 ERROR trunk:0  
+../../apps/lua/scripts/database/mysql_game.lua:2: module 'moba_game_config' not found:
+	no field package.preload['moba_game_config']
+	no file 'E:\GitProject\moba_server\build\bin\lua\moba_game_config.lua'
+	no file 'E:\GitProject\moba_server\build\bin\lua\moba_game_config\init.lua'
+	no file 'E:\GitProject\moba_server\build\bin\moba_game_config.lua'
+	no file 'E:\GitProject\moba_server\build\bin\moba_game_config\init.lua'
+	no file 'E:\GitProject\moba_server\build\bin\..\share\lua\5.3\moba_game_config.lua'
+	no file 'E:\GitProject\moba_server\build\bin\..\share\lua\5.3\moba_game_config\init.lua'
+	no file '.\moba_game_config.lua'
+	no file '.\moba_game_config\init.lua'
+	no file '../../apps/lua/scripts/moba_game_config.lua'
+	no file '../../apps/lua/scripts/moba_game_config/init.lua'
+	no file 'E:\GitProject\moba_server\build\bin\moba_game_config.dll'
+	no file 'E:\GitProject\moba_server\build\bin\..\lib\lua\5.3\moba_game_config.dll'
+	no file 'E:\GitProject\moba_server\build\bin\loadall.dll'
+	no file '.\moba_game_config.dll'
+20210527 23:15:15 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210527 23:15:15 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210527 23:15:15 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:16  
+connect to moba game db success!!!!
+20210527 23:18:57 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210527 23:18:57 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210527 23:18:57 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:16  
+connect to moba game db success!!!!
+20210527 23:31:32 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210527 23:31:32 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210527 23:31:32 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:16  
+connect to moba game db success!!!!

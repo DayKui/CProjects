@@ -1,0 +1,96 @@
+20210617 00:46:00 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210617 00:46:00 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210617 00:46:00 DEBUG ../../apps/lua/scripts/database/redis_center.lua:17  
+connect to redis center db success!!!!
+20210617 00:46:00 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210617 00:47:40 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:17  
+Auth Recv	9
+20210617 00:47:40 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:13  
+login	tdk11
+20210617 00:47:40 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:14  
+login	698D51A19D8A121CE581499D7B701668
+20210617 00:47:54 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:17  
+Auth Recv	9
+20210617 00:47:54 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:13  
+login	tao
+20210617 00:47:54 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:14  
+login	698D51A19D8A121CE581499D7B701668
+20210617 00:47:54 DEBUG ../../apps/lua/scripts/database/redis_center.lua:30  
+set redis info  uvip=	0
+20210617 00:47:54 DEBUG ../../apps/lua/scripts/database/redis_center.lua:42  
+success
+20210617 00:49:55 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:17  
+Auth Recv	9
+20210617 00:49:55 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:13  
+login	tao
+20210617 00:49:55 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:14  
+login	698D51A19D8A121CE581499D7B701668
+20210617 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:30  
+set redis info  uvip=	0
+20210617 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:42  
+success
+20210617 00:52:58 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210617 00:52:58 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210617 00:52:58 DEBUG ../../apps/lua/scripts/database/redis_center.lua:17  
+connect to redis center db success!!!!
+20210617 00:52:58 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210617 00:53:14 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:17  
+Auth Recv	9
+20210617 00:53:14 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:13  
+login	tao
+20210617 00:53:14 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:14  
+login	698D51A19D8A121CE581499D7B701668
+20210617 00:53:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:30  
+set redis info  uvip=	0
+20210617 00:53:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:42  
+success
+20210617 23:45:16 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210617 23:45:16 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210617 23:45:16 DEBUG ../../apps/lua/scripts/database/redis_center.lua:17  
+connect to redis center db success!!!!
+20210617 23:45:16 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210617 23:45:49 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:17  
+Auth Recv	9
+20210617 23:45:49 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:13  
+login	tao
+20210617 23:45:49 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:14  
+login	698D51A19D8A121CE581499D7B701668
+20210617 23:45:49 DEBUG ../../apps/lua/scripts/database/redis_center.lua:30  
+set redis info  uvip=	0
+20210617 23:45:49 DEBUG ../../apps/lua/scripts/database/redis_center.lua:42  
+success
+20210617 23:47:51 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210617 23:47:51 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210617 23:47:51 DEBUG ../../apps/lua/scripts/database/redis_center.lua:17  
+connect to redis center db success!!!!
+20210617 23:47:51 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210617 23:47:55 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210617 23:47:55 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210617 23:47:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:17  
+connect to redis center db success!!!!
+20210617 23:47:55 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210617 23:48:11 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:17  
+Auth Recv	9
+20210617 23:48:11 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:13  
+login	tao
+20210617 23:48:11 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:14  
+login	698D51A19D8A121CE581499D7B701668
+20210617 23:48:11 DEBUG ../../apps/lua/scripts/database/redis_center.lua:30  
+set redis info  uvip=	0
+20210617 23:48:11 DEBUG ../../apps/lua/scripts/database/redis_center.lua:42  
+success

@@ -5,6 +5,9 @@ local Respones = {
 	UserIsFreeze = -101,
 	UserIsNotGuest = -102,
 	InvalidParams = -103,
+	UnameIsExist = -104,
+	UnameOrUpwdError = -105,
+	InvalidOpt = -106,
 }
 
 return Respones

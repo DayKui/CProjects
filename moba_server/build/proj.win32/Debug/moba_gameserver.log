@@ -1,1 +1,164 @@
-﻿  moba_gameserver.vcxproj -> E:\GitProject\moba_server\build\proj.win32\Debug\moba_gameserver.exe
+﻿  base64_decoder.c
+  base64_encoder.c
+  md5.c
+  sha1.c
+  http_parser.c
+  fs-poll.c
+  inet.c
+  threadpool.c
+  uv-common.c
+  version.c
+  async.c
+  core.c
+  dl.c
+  error.c
+  fs-event.c
+  fs.c
+  getaddrinfo.c
+  getnameinfo.c
+  handle.c
+  loop-watcher.c
+  正在生成代码...
+  正在编译...
+  pipe.c
+  poll.c
+  process-stdio.c
+  process.c
+  req.c
+  signal.c
+  snprintf.c
+  stream.c
+  tcp.c
+  thread.c
+  timer.c
+  tty.c
+  udp.c
+  util.c
+  winapi.c
+  winsock.c
+  lapi.c
+  lauxlib.c
+  lbaselib.c
+  lbitlib.c
+  正在生成代码...
+  正在编译...
+  lcode.c
+  lcorolib.c
+  lctype.c
+  ldblib.c
+  ldebug.c
+  ldo.c
+  ldump.c
+  lfunc.c
+  lgc.c
+  linit.c
+  liolib.c
+  llex.c
+  lmathlib.c
+  lmem.c
+  loadlib.c
+  lobject.c
+  lopcodes.c
+  loslib.c
+  lparser.c
+  lstate.c
+  正在生成代码...
+  正在编译...
+  lstring.c
+  lstrlib.c
+  ltable.c
+  ltablib.c
+  ltm.c
+  lundump.c
+  lutf8lib.c
+  lvm.c
+  lzio.c
+  json.c
+e:\gitproject\moba_server\3rd\mjson\json.c(1338): warning C4477: “fprintf”: 格式字符串“%lX”需要类型“unsigned long”的参数，但可变参数 1 拥有了类型“int64_t”
+  e:\gitproject\moba_server\3rd\mjson\json.c(1338): note: 请考虑在格式字符串中使用“%llX”
+  e:\gitproject\moba_server\3rd\mjson\json.c(1338): note: 请考虑在格式字符串中使用“%I64X”
+  tolua_event.c
+  tolua_is.c
+e:\gitproject\moba_server\3rd\tolua\tolua_is.c(119): warning C4114: 多次使用同一类型限定符
+  tolua_map.c
+e:\gitproject\moba_server\3rd\tolua\tolua_map.c(414): warning C4090: “函数”: 不同的“const”限定符
+  tolua_push.c
+  tolua_to.c
+  cache_alloc.c
+  small_alloc.c
+  timestamp.c
+  time_list.c
+  正在生成代码...
+  tolua_fix.cc
+  main.cc
+  game.pb.cc
+e:\gitproject\moba_server\3rd\protobuf\src\google\protobuf\wire_format_lite.h(863): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+e:\gitproject\moba_server\3rd\protobuf\src\google\protobuf\wire_format_lite.h(874): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+  mysql_wrapper.cc
+e:\gitproject\moba_server\database\mysql_wrapper.cc(61): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
+e:\gitproject\moba_server\database\mysql_wrapper.cc(98): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
+e:\gitproject\moba_server\database\mysql_wrapper.cc(100): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
+e:\gitproject\moba_server\database\mysql_wrapper.cc(101): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
+e:\gitproject\moba_server\database\mysql_wrapper.cc(102): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
+e:\gitproject\moba_server\database\mysql_wrapper.cc(160): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
+e:\gitproject\moba_server\database\mysql_wrapper.cc(224): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
+  redis_wrapper.cc
+  lua_wrapper.cc
+  mysql_export_to_lua.cc
+  netbus_export_to_lua.cc
+e:\gitproject\moba_server\lua_wrapper\netbus_export_to_lua.cc(67): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+  proto_man_export_to_lua.cc
+e:\gitproject\moba_server\lua_wrapper\proto_man_export_to_lua.cc(27): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\proto_man_export_to_lua.cc(47): warning C4102: “lua_failed”: 未引用的标签
+  redis_export_to_lua.cc
+e:\gitproject\moba_server\lua_wrapper\redis_export_to_lua.cc(70): warning C4018: “<”: 有符号/无符号不匹配
+  scheduler_export_to_lua.cc
+e:\gitproject\moba_server\lua_wrapper\scheduler_export_to_lua.cc(50): warning C4002: 类函数宏的调用“lua_tointeger”参数过多
+e:\gitproject\moba_server\lua_wrapper\scheduler_export_to_lua.cc(50): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\scheduler_export_to_lua.cc(55): warning C4002: 类函数宏的调用“lua_tointeger”参数过多
+e:\gitproject\moba_server\lua_wrapper\scheduler_export_to_lua.cc(55): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\scheduler_export_to_lua.cc(63): warning C4002: 类函数宏的调用“lua_tointeger”参数过多
+e:\gitproject\moba_server\lua_wrapper\scheduler_export_to_lua.cc(63): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\scheduler_export_to_lua.cc(90): warning C4002: 类函数宏的调用“lua_tointeger”参数过多
+e:\gitproject\moba_server\lua_wrapper\scheduler_export_to_lua.cc(90): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+  service_export_to_lua.cc
+  session_export_to_lua.cc
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(92): warning C4244: “初始化”: 从“lua_Number”转换到“float”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(98): warning C4244: “初始化”: 从“lua_Number”转换到“int64_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(104): warning C4244: “初始化”: 从“lua_Number”转换到“uint64_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(110): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(118): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(124): warning C4244: “初始化”: 从“lua_Number”转换到“uint32_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(187): warning C4244: “初始化”: 从“lua_Number”转换到“float”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(193): warning C4244: “初始化”: 从“lua_Number”转换到“int64_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(199): warning C4244: “初始化”: 从“lua_Number”转换到“uint64_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(205): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(213): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(219): warning C4244: “初始化”: 从“lua_Number”转换到“uint32_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(276): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(283): warning C4244: “=”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(287): warning C4244: “=”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(291): warning C4244: “=”: 从“lua_Integer”转换到“unsigned int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(354): warning C4244: “初始化”: 从“lua_Integer”转换到“unsigned int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(379): warning C4244: “初始化”: 从“lua_Integer”转换到“unsigned int”，可能丢失数据
+  utils_export_to_lua.cc
+  netbus.cc
+  proto_man.cc
+  service.cc
+  service_man.cc
+  session_uv.cc
+  tp_protocol.cc
+  正在生成代码...
+  正在编译...
+  udp_session.cc
+  ws_protocol.cc
+  logger.cc
+  正在生成代码...
+  moba_gameserver.vcxproj -> E:\GitProject\moba_server\build\proj.win32\Debug\moba_gameserver.exe

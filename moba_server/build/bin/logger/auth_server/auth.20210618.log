@@ -1,0 +1,10 @@
+20210618 00:02:45 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:17  
+Auth Recv	9
+20210618 00:02:45 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:13  
+login	tao
+20210618 00:02:45 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:14  
+login	698D51A19D8A121CE581499D7B701668
+20210618 00:02:45 DEBUG ../../apps/lua/scripts/database/redis_center.lua:30  
+set redis info  uvip=	0
+20210618 00:02:45 DEBUG ../../apps/lua/scripts/database/redis_center.lua:42  
+success

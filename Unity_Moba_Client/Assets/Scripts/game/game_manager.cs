@@ -8,11 +8,9 @@ public class game_manager : UnitySingletom<game_manager> {
 	void Start () {
         event_manager.Instance.init();
 
-        user_login.Instance.init();
-	}
+        auth_service_proxy.Instance.init();
+        system_service_proxy.Instance.init();
+        ulevel.Instance.init();
+    }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

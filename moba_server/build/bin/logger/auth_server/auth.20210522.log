@@ -1,0 +1,81 @@
+20210522 23:35:08 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210522 23:35:08 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210522 23:35:08 DEBUG ../../apps/lua/scripts/database/redis_center.lua:17  
+connect to redis center db success!!!!
+20210522 23:35:08 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210522 23:35:22 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	1
+20210522 23:35:22 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210522 23:39:55 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210522 23:39:55 ERROR trunk:0  
+error loading module 'auth_server/guest' from file '../../apps/lua/scripts/auth_server/guest.lua':
+	../../apps/lua/scripts/auth_server/guest.lua:27: '}' expected (to close '{' at line 25) near 'status'
+20210522 23:39:55 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210522 23:41:21 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210522 23:41:21 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210522 23:41:21 DEBUG ../../apps/lua/scripts/database/redis_center.lua:17  
+connect to redis center db success!!!!
+20210522 23:41:21 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210522 23:41:38 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	1
+20210522 23:41:38 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210522 23:41:38 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:37  
+3333333333333
+20210522 23:41:38 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:25  
+111111111111111
+20210522 23:46:44 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210522 23:46:44 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210522 23:46:44 DEBUG ../../apps/lua/scripts/database/redis_center.lua:17  
+connect to redis center db success!!!!
+20210522 23:46:44 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210522 23:46:53 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	1
+20210522 23:46:53 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210522 23:46:53 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:37  
+3333333333333
+20210522 23:46:53 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:25  
+111111111111111
+20210522 23:51:20 DEBUG ../../apps/lua/scripts/auth_server/main.lua:30  
+Auth Server Start at 8000
+20210522 23:51:20 DEBUG ../../apps/lua/scripts/auth_server/main.lua:37  
+register Auth service:[1] success!!!
+20210522 23:51:20 DEBUG ../../apps/lua/scripts/database/redis_center.lua:17  
+connect to redis center db success!!!!
+20210522 23:51:20 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:16  
+connect to auth center db success!!!!
+20210522 23:51:29 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	1
+20210522 23:51:29 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210522 23:51:29 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:11  
+login	1	1	1	wF0peh3QetGp2V2VvqKa87rCnVfx3EvN
+20210522 23:51:29 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:71  
+auth_login	1	gst101126	1
+20210522 23:51:29 DEBUG ../../apps/lua/scripts/database/redis_center.lua:44  
+success
+20210522 23:53:18 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	5
+20210522 23:53:18 DEBUG ../../apps/lua/scripts/auth_server/edit_profile.lua:12  
+edit_profile	1	tdk	3	0
+20210522 23:53:18 DEBUG ../../apps/lua/scripts/database/redis_center.lua:44  
+success
+20210522 23:55:50 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:12  
+Auth Recv	5
+20210522 23:55:50 DEBUG ../../apps/lua/scripts/auth_server/edit_profile.lua:12  
+edit_profile	1	tdk11	8	1
+20210522 23:55:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:44  
+success
