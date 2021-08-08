@@ -15,8 +15,16 @@ using namespace std;
 #include "tp_protocol.h"
 #include "proto_man.h"
 #include "service_man.h"
+#include "../utils/small_alloc.h"
 
 extern "C" {
+	static void on_uv_udp_send_end(uv_udp_send_t* req, int status) {
+		if (status == 0) {
+			// printf("send sucess\n");
+		}
+		small_free(req);
+	}
+
 	static void on_recv_client_cmd(session* s, unsigned char* body, int len) {
 
 		struct raw_cmd raw;
@@ -44,6 +52,12 @@ extern "C" {
 			int head_size = 0;
 
 			if (!tp_protocol::read_header(pkg_data, s->recved, &pkg_size, &head_size)) {
+				break;
+			}
+			//包的数据的大小必须要大于头的大小
+			if (pkg_size<=head_size)
+			{
+				s->close();
 				break;
 			}
 
@@ -240,6 +254,8 @@ extern "C" {
 		printf("new client comming %s:%d\n", s->c_address, s->c_port);
 
 		uv_read_start((uv_stream_t*)client, uv_alloc_buf, after_read);
+
+		service_man::on_session_connect((session*)s);
 	}
 }
 
@@ -248,7 +264,15 @@ netbus* netbus::instance() {
 	return &g_netbus;
 }
 
+netbus::netbus() {
+	this->udp_handler = NULL;
+}
+
 void netbus::udp_listen(int port) {
+	if (this->udp_handler)
+	{
+		return;
+	}
 	uv_udp_t* server = (uv_udp_t*)malloc(sizeof(uv_udp_t));
 	memset(server, 0, sizeof(uv_udp_t));
 	uv_udp_init(uv_default_loop(), server);
@@ -260,6 +284,7 @@ void netbus::udp_listen(int port) {
 	uv_ip4_addr("0.0.0.0", port, &addr);
 	uv_udp_bind(server, (const struct sockaddr*)&addr, 0);
 
+	this->udp_handler = (void*)server;
 	uv_udp_recv_start(server, udp_uv_alloc_buf, after_uv_udp_recv);
 }
 
@@ -370,4 +395,17 @@ void netbus::tcp_connect(const char* server_ip, int port,
 		// log_error("uv_tcp_connect error!!!");
 		return;
 	}
+}
+
+void netbus::udp_send_to(char* ip, int port, unsigned char* body, int len) {
+	uv_buf_t w_buf;
+	w_buf = uv_buf_init((char*)body, len);
+	uv_udp_send_t* req = (uv_udp_send_t*)small_alloc(sizeof(uv_udp_send_t));
+
+	SOCKADDR_IN addr;
+	addr.sin_family = AF_INET;
+	addr.sin_port = htons(port);
+	addr.sin_addr.S_un.S_addr = inet_addr(ip);
+
+	uv_udp_send(req, (uv_udp_t*)this->udp_handler, &w_buf, 1, (const sockaddr*)&addr, on_uv_udp_send_end);
 }

@@ -7,7 +7,7 @@ local Cmd = require("Cmd")
 
 
 -- {stype, ctype, utag, body}
-function login(s, req)
+local function name_login(s, req)
 	local utag = req[3]
 	local uname_login_req = req[4]
     print("login",uname_login_req.uname)
@@ -71,7 +71,7 @@ function login(s, req)
 end
 
 local uname_login = {
-	login = login,
+	login = name_login,
 }
 
 return uname_login

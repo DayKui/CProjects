@@ -8,7 +8,7 @@ public:
 	unsigned int uid;
 
 	session() {
-		this->as_client = 0;
+		this->as_client = 0;//1:服务器之间的链接 0:客户端与服务器
 		this->utag = 0;
 		this->uid = 0;
 	}

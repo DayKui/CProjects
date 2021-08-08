@@ -1,0 +1,1794 @@
+20210809 00:43:38 DEBUG ../../apps/lua/scripts/logic_server/main.lua:31  
+Logic Server Start at 8002
+20210809 00:43:38 DEBUG ../../apps/lua/scripts/logic_server/main.lua:40  
+register Logic service:[3] success!!!
+20210809 00:43:38 DEBUG ../../apps/lua/scripts/database/redis_game.lua:24  
+connect to redis game db success!!!!
+20210809 00:43:38 DEBUG ../../apps/lua/scripts/database/redis_center.lua:24  
+connect to redis center db success!!!!
+20210809 00:43:39 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:23  
+connect to auth center db success!!!!
+20210809 00:43:39 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:24  
+connect to moba game db success!!!!
+20210809 00:43:41 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:27  
+gateway connect to Logic !!!
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:43:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:43:50 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+loginLogic	127.0.0.1	8888
+20210809 00:43:55 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:178  
+[12] enter match!
+20210809 00:43:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:178  
+[13] enter match!
+20210809 00:43:57 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:178  
+[14] enter match!
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:02 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:02 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:03 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:03 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:03 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:03 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:44:03 ERROR e:\gitproject\moba_server\lua_wrapper\lua_wrapper.cc:330  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:103: bad argument #-1 to 'udp_send_msg' (number expected, got nil)
+20210809 00:44:03 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	nil	table
+20210809 00:46:14 DEBUG ../../apps/lua/scripts/logic_server/main.lua:31  
+Logic Server Start at 8002
+20210809 00:46:14 DEBUG ../../apps/lua/scripts/logic_server/main.lua:40  
+register Logic service:[3] success!!!
+20210809 00:46:14 DEBUG ../../apps/lua/scripts/database/redis_game.lua:24  
+connect to redis game db success!!!!
+20210809 00:46:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:24  
+connect to redis center db success!!!!
+20210809 00:46:14 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:23  
+connect to auth center db success!!!!
+20210809 00:46:14 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:24  
+connect to moba game db success!!!!
+20210809 00:46:17 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:27  
+gateway connect to Logic !!!
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:46:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:46:27 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+loginLogic	127.0.0.1	8888
+20210809 00:46:35 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:178  
+[12] enter match!
+20210809 00:46:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:178  
+[13] enter match!
+20210809 00:46:37 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:178  
+[14] enter match!
+20210809 00:46:42 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:42 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:42 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:42 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:42 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:42 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:42 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:42 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:42 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:43 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:44 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:45 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:45 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:46 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:46 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:46 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:46 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:276  
+lua_udp_send_msg 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:281  
+lua_udp_send_msg 127.0.0.1 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:286  
+lua_udp_send_msg 8888 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:288  
+luamsg id= 127.0.0.1,port=8888
+
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:304  
+lua_udp_send_msg stype 3 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:308  
+lua_udp_send_msg ctype 32 11111
+20210809 00:46:46 ERROR e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc:312  
+lua_udp_send_msg utag 0 11111
+20210809 00:46:46 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:49:50 DEBUG ../../apps/lua/scripts/logic_server/main.lua:31  
+Logic Server Start at 8002
+20210809 00:49:50 DEBUG ../../apps/lua/scripts/logic_server/main.lua:40  
+register Logic service:[3] success!!!
+20210809 00:49:50 DEBUG ../../apps/lua/scripts/database/redis_game.lua:24  
+connect to redis game db success!!!!
+20210809 00:49:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:24  
+connect to redis center db success!!!!
+20210809 00:49:50 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:23  
+connect to auth center db success!!!!
+20210809 00:49:50 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:24  
+connect to moba game db success!!!!
+20210809 00:49:53 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:27  
+gateway connect to Logic !!!
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:37  
+set redis info  uvip=	0
+20210809 00:49:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:49  
+success
+20210809 00:50:03 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+loginLogic	127.0.0.1	8888
+20210809 00:50:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:178  
+[12] enter match!
+20210809 00:50:12 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:178  
+[13] enter match!
+20210809 00:50:13 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:178  
+[14] enter match!
+20210809 00:50:18 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:19 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:20 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:21 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:22 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:24 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:25 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:26 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:27 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:29 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:29 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:29 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:29 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:29 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:29 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:29 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:29 DEBUG ../../apps/lua/scripts/logic_server/player.lua:102  
+127.0.0.1	8888	3	32	table
+20210809 00:50:29 ERROR e:\gitproject\moba_server\lua_wrapper\service_export_to_lua.cc:103  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/game_mgr.lua:224: attempt to call a nil value (method 'set_upd_addr')
+20210809 00:50:30 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:21  
+Logic service disconnect with gateway !!!

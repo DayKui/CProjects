@@ -1,6 +1,13 @@
 local game_config = require("game_config")
 local redis_conn = nil
 
+local function is_connected()
+	if not redis_conn then
+		return false
+	end	
+	return true
+end
+
 function redis_connect_to_game()
 	local host = game_config.game_redis.host
 	local port = game_config.game_redis.port
@@ -43,6 +50,11 @@ end
 
 -- ret_handler(err, uinfo)
 function get_ugame_info_inredis(uid, ret_handler)
+	if redis_conn == nil then 
+		Logger.error("redis game disconnected")
+		return
+	end
+	
 	local redis_cmd = "hgetall moba_ugame_user_uid_" .. uid
 	Redis.query(redis_conn, redis_cmd, function (err, ret)
 		if err then
@@ -63,6 +75,11 @@ function get_ugame_info_inredis(uid, ret_handler)
 end
 
 function add_chip_inredis(uid, add_chip)
+	if redis_conn == nil then 
+		Logger.error("redis game disconnected")
+		return
+	end
+
 	get_ugame_info_inredis(uid, function (err, ugame_info)
 		if err then
 			Logger.error("get ugame_info inredis error")
@@ -79,6 +96,7 @@ local redis_game = {
 	set_ugame_info_inredis = set_ugame_info_inredis,
 	get_ugame_info_inredis = get_ugame_info_inredis,
 	add_chip_inredis = add_chip_inredis,
+	is_connected=is_connected,
 }
 
 return redis_game

@@ -24,12 +24,11 @@ int main(int argc, char** argv) {
 	if (argc != 3) { // ≤‚ ‘
 		std::string search_path = "../../apps/lua/scripts/";
 		lua_wrapper::add_search_path(search_path);
-		std::string lua_file = search_path + "gateway/main.lua";
+		std::string lua_file = search_path + "logic_server/main.lua";
 		lua_wrapper::do_file(lua_file);
 		// end 
 	}
 	else {
-
 		std::string search_path = argv[1];
 		if (*(search_path.end() - 1) != '/') {
 			search_path += "/";

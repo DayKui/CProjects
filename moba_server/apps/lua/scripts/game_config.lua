@@ -17,6 +17,14 @@ remote_servers[Stype.System] = {
 	desic="System Server"
 }
 
+
+remote_servers[Stype.Logic] = {
+	stype = Stype.Logic,
+	ip = "127.0.0.1",
+	port = 8002, 
+	desic = "Logic Server"
+}
+
 local game_config = {
 	gateway_tcp_ip = "127.0.0.1",
 	gateway_tcp_port = 6080,
@@ -53,6 +61,19 @@ local game_config = {
 		host = "127.0.0.1", -- redis所在的host
 		port = 6379, -- reidis 端口
 		db_index = 2, -- 数据库2
+	},
+
+		-- 做排行榜的redis服务器
+	rank_redis = {
+		host = "127.0.0.1", -- redis所在的host
+		port = 6379, -- reidis 端口
+		db_index = 3, -- 数据库3
+	},
+
+	-- logic server udp
+	logic_udp = {
+		host = "127.0.0.1",
+		port = 8800,
 	},
 }
 

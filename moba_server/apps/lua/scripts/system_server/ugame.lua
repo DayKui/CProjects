@@ -4,6 +4,7 @@ local Cmd = require("Cmd")
 local mysql_game = require("database/mysql_game")
 local login_bonues = require("system_server/login_bonues")
 local redis_game = require("database/redis_game")
+local redis_rank = require("database/redis_rank")
 -- {stype, ctype, utag, body}
 function get_ugame_info(s, req)
 	local uid = req[3];
@@ -48,6 +49,9 @@ function get_ugame_info(s, req)
 		-- 更新reidis数据库里面的数据;
 		redis_game.set_ugame_info_inredis(uid, ugame_info)
 
+		-- 刷新一下世界排行榜
+		redis_rank.flush_world_rank_with_uchip_inredis(uid, ugame_info.uchip)
+		
 		-- 检查登陆奖励
 		login_bonues.check_login_bonues(uid, function (err, bonues_info)
 			if err then -- 告诉客户端系统错误信息;

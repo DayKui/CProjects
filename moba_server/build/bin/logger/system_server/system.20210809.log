@@ -1,0 +1,72 @@
+20210809 00:31:56 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210809 00:31:56 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210809 00:31:56 DEBUG ../../apps/lua/scripts/database/redis_game.lua:24  
+connect to redis game db success!!!!
+20210809 00:31:56 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:24  
+connect to redis rank db success!!!!
+20210809 00:31:56 DEBUG ../../apps/lua/scripts/database/redis_center.lua:24  
+connect to redis center db success!!!!
+20210809 00:31:56 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:24  
+connect to moba game db success!!!!
+20210809 00:35:50 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210809 00:35:50 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210809 00:35:50 DEBUG ../../apps/lua/scripts/database/redis_game.lua:24  
+connect to redis game db success!!!!
+20210809 00:35:50 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:24  
+connect to redis rank db success!!!!
+20210809 00:35:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:24  
+connect to redis center db success!!!!
+20210809 00:35:50 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:24  
+connect to moba game db success!!!!
+20210809 00:40:10 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210809 00:40:10 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210809 00:40:10 DEBUG ../../apps/lua/scripts/database/redis_game.lua:24  
+connect to redis game db success!!!!
+20210809 00:40:10 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:24  
+connect to redis rank db success!!!!
+20210809 00:40:10 DEBUG ../../apps/lua/scripts/database/redis_center.lua:24  
+connect to redis center db success!!!!
+20210809 00:40:10 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:24  
+connect to moba game db success!!!!
+20210809 00:43:39 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210809 00:43:39 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210809 00:43:39 DEBUG ../../apps/lua/scripts/database/redis_game.lua:24  
+connect to redis game db success!!!!
+20210809 00:43:39 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:24  
+connect to redis rank db success!!!!
+20210809 00:43:39 DEBUG ../../apps/lua/scripts/database/redis_center.lua:24  
+connect to redis center db success!!!!
+20210809 00:43:39 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:24  
+connect to moba game db success!!!!
+20210809 00:46:15 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210809 00:46:15 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210809 00:46:15 DEBUG ../../apps/lua/scripts/database/redis_game.lua:24  
+connect to redis game db success!!!!
+20210809 00:46:15 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:24  
+connect to redis rank db success!!!!
+20210809 00:46:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:24  
+connect to redis center db success!!!!
+20210809 00:46:15 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:24  
+connect to moba game db success!!!!
+20210809 00:49:51 DEBUG ../../apps/lua/scripts/system_server/main.lua:30  
+System Server Start at 8001
+20210809 00:49:51 DEBUG ../../apps/lua/scripts/system_server/main.lua:37  
+register System service:[2] success!!!
+20210809 00:49:51 DEBUG ../../apps/lua/scripts/database/redis_game.lua:24  
+connect to redis game db success!!!!
+20210809 00:49:51 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:24  
+connect to redis rank db success!!!!
+20210809 00:49:51 DEBUG ../../apps/lua/scripts/database/redis_center.lua:24  
+connect to redis center db success!!!!
+20210809 00:49:51 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:24  
+connect to moba game db success!!!!

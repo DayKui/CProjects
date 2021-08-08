@@ -5,7 +5,7 @@ local Stype = require("Stype")
 local Cmd = require("Cmd")
 
 -- {stype, ctype, utag, body}
-function login(s, req)
+local function login(s, req)
 	local g_key = req[4].guest_key
 	local utag = req[3];
 	print("login",req[1], req[2], req[3], req[4].guest_key)
@@ -19,7 +19,6 @@ function login(s, req)
 		Session.send_msg(s, msg)
 		return
 	end
-
 	mysql_center.get_guest_uinfo(g_key, function (err, uinfo)
 		if err then -- 告诉客户端系统错误信息;
 			local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
@@ -45,7 +44,6 @@ function login(s, req)
 			end)
 			return
 		end
-
 		-- 找到了我们gkey所对应的游客数据;
 		if uinfo.status ~= 0 then --账号被查封
 			local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
@@ -55,7 +53,6 @@ function login(s, req)
 			Session.send_msg(s, msg)
 			return
 		end
-
 		if uinfo.is_guest ~= 1 then  --账号已经不是游客账号了
 			local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
 				status = Respones.UserIsNotGuest,
@@ -65,7 +62,6 @@ function login(s, req)
 			return
 		end
 		-- end
-
 		print("auth_login",uinfo.uid, uinfo.unick,uinfo.is_guest) -- 登陆成功返回给客户端;
 		redis_center.set_uinfo_inredis(uinfo.uid, uinfo)
 

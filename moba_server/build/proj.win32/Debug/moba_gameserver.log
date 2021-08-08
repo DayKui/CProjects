@@ -85,6 +85,7 @@ e:\gitproject\moba_server\3rd\tolua\tolua_map.c(414): warning C4090: “函数�
   tolua_push.c
   tolua_to.c
   cache_alloc.c
+e:\gitproject\moba_server\utils\cache_alloc.c(30): warning C4101: “i”: 未引用的局部变量
   small_alloc.c
   timestamp.c
   time_list.c
@@ -95,19 +96,19 @@ e:\gitproject\moba_server\3rd\tolua\tolua_map.c(414): warning C4090: “函数�
 e:\gitproject\moba_server\3rd\protobuf\src\google\protobuf\wire_format_lite.h(863): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
 e:\gitproject\moba_server\3rd\protobuf\src\google\protobuf\wire_format_lite.h(874): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
   mysql_wrapper.cc
-e:\gitproject\moba_server\database\mysql_wrapper.cc(61): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+e:\gitproject\moba_server\database\mysql_wrapper.cc(62): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
-e:\gitproject\moba_server\database\mysql_wrapper.cc(98): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
-e:\gitproject\moba_server\database\mysql_wrapper.cc(100): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+e:\gitproject\moba_server\database\mysql_wrapper.cc(99): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
 e:\gitproject\moba_server\database\mysql_wrapper.cc(101): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
 e:\gitproject\moba_server\database\mysql_wrapper.cc(102): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
-e:\gitproject\moba_server\database\mysql_wrapper.cc(160): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+e:\gitproject\moba_server\database\mysql_wrapper.cc(103): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
-e:\gitproject\moba_server\database\mysql_wrapper.cc(224): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+e:\gitproject\moba_server\database\mysql_wrapper.cc(161): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
+e:\gitproject\moba_server\database\mysql_wrapper.cc(225): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
   redis_wrapper.cc
   lua_wrapper.cc
@@ -130,26 +131,32 @@ e:\gitproject\moba_server\lua_wrapper\scheduler_export_to_lua.cc(90): warning C4
 e:\gitproject\moba_server\lua_wrapper\scheduler_export_to_lua.cc(90): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
   service_export_to_lua.cc
   session_export_to_lua.cc
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(92): warning C4244: “初始化”: 从“lua_Number”转换到“float”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(98): warning C4244: “初始化”: 从“lua_Number”转换到“int64_t”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(104): warning C4244: “初始化”: 从“lua_Number”转换到“uint64_t”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(110): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(118): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(124): warning C4244: “初始化”: 从“lua_Number”转换到“uint32_t”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(187): warning C4244: “初始化”: 从“lua_Number”转换到“float”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(193): warning C4244: “初始化”: 从“lua_Number”转换到“int64_t”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(199): warning C4244: “初始化”: 从“lua_Number”转换到“uint64_t”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(205): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(213): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(219): warning C4244: “初始化”: 从“lua_Number”转换到“uint32_t”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(276): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(283): warning C4244: “=”: 从“lua_Integer”转换到“int”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(287): warning C4244: “=”: 从“lua_Integer”转换到“int”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(291): warning C4244: “=”: 从“lua_Integer”转换到“unsigned int”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(354): warning C4244: “初始化”: 从“lua_Integer”转换到“unsigned int”，可能丢失数据
-e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(379): warning C4244: “初始化”: 从“lua_Integer”转换到“unsigned int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(93): warning C4244: “初始化”: 从“lua_Number”转换到“float”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(99): warning C4244: “初始化”: 从“lua_Number”转换到“int64_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(105): warning C4244: “初始化”: 从“lua_Number”转换到“uint64_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(111): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(119): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(125): warning C4244: “初始化”: 从“lua_Number”转换到“uint32_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(188): warning C4244: “初始化”: 从“lua_Number”转换到“float”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(194): warning C4244: “初始化”: 从“lua_Number”转换到“int64_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(200): warning C4244: “初始化”: 从“lua_Number”转换到“uint64_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(206): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(214): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(220): warning C4244: “初始化”: 从“lua_Number”转换到“uint32_t”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(292): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(299): warning C4244: “=”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(302): warning C4244: “=”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(305): warning C4244: “=”: 从“lua_Integer”转换到“unsigned int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(353): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(360): warning C4244: “=”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(364): warning C4244: “=”: 从“lua_Integer”转换到“int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(368): warning C4244: “=”: 从“lua_Integer”转换到“unsigned int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(437): warning C4244: “初始化”: 从“lua_Integer”转换到“unsigned int”，可能丢失数据
+e:\gitproject\moba_server\lua_wrapper\session_export_to_lua.cc(462): warning C4244: “初始化”: 从“lua_Integer”转换到“unsigned int”，可能丢失数据
   utils_export_to_lua.cc
   netbus.cc
+e:\gitproject\moba_server\netbus\netbus.cc(408): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1831): note: 参见“inet_addr”的声明
   proto_man.cc
   service.cc
   service_man.cc

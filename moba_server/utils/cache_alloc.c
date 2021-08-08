@@ -27,6 +27,8 @@ struct cache_allocer* create_cache_allocer(int capacity, int elem_size) {
 
 	allocer->free_list = NULL;
 
+	int i;
+
 	for (int i = 0; i < capacity; i++) {
 		struct node*walk = (struct node*)(allocer->cache_mem + i * elem_size);
 		walk->next = allocer->free_list;
