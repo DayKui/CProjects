@@ -144,7 +144,7 @@ public class auth_service_proxy : Singletom<auth_service_proxy>
 
     public void guest_login()
     {
-        this.g_key = PlayerPrefs.GetString("bycw_moba_guest_key");
+        this.g_key = null;// PlayerPrefs.GetString("bycw_moba_guest_key");
         this.is_save_gkey = false;
         if (this.g_key == null || this.g_key.Length != 32)
         {

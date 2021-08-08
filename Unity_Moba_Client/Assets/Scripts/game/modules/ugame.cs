@@ -11,8 +11,11 @@ public class ugame : Singletom<ugame>
     public int uvip = 0;
     public bool is_guest = false;
     public string guest_key = null;
+    public int zid = -1;
 
     public UserGameInfo ugame_info;
+
+    public List<UserArrived> other_users = new List<UserArrived>();
     public void save_ugame_info(UserGameInfo ugame_info)
     {
         this.ugame_info = ugame_info;

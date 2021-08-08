@@ -11,7 +11,8 @@ public class login_scene : MonoBehaviour
 
     void on_get_ugame_info_success(string name, object udata)
     {
-        SceneManager.LoadScene("home_scene");
+        //SceneManager.LoadScene("home_scene");
+        logic_service_proxy.Instance.login_logic_server();
     }
 
     void on_login_success(string name, object udata)
@@ -21,17 +22,24 @@ public class login_scene : MonoBehaviour
         system_service_proxy.Instance.load_user_ugame_info();
     }
 
+    void on_login_logic_server_success(string name, object udata)
+    {
+        SceneManager.LoadScene("home_scene");
+    }
+
     // Use this for initialization
     void Start()
     {
         event_manager.Instance.add_event_listener("get_ugame_info_success", this.on_get_ugame_info_success);
         event_manager.Instance.add_event_listener("login_success", this.on_login_success);
+        event_manager.Instance.add_event_listener("login_logic_server", this.on_login_logic_server_success);
     }
 
     void OnDestroy()
     {
         event_manager.Instance.remove_event_listener("get_ugame_info_success", this.on_get_ugame_info_success);
         event_manager.Instance.remove_event_listener("login_success", this.on_login_success);
+        event_manager.Instance.remove_event_listener("login_logic_server", this.on_login_logic_server_success);
     }
 
     public void on_guest_login_click()
